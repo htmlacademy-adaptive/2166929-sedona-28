@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.social__link {
+  display: inline-flex;
+  background-color: $seagull;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+
+  &--vkontakte {
+    background-image: url("../../img/social-icon-vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../../img/social-icon-telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../../img/social-icon-youtube.svg");
+  }
+}

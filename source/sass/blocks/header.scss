@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__toggle {
+  width: 22px;
+  height: 23px;
+  border: none;
+  background-color: $black;
+}

@@ -1,0 +1,16 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-color: $white-smoke;
+  background-image: url("../../img/banner-background-image.jpg");
+  background-repeat: no-repeat;
+  min-height: 389px;
+
+  &--inner {
+    min-height: 158px;
+  }
+}
+
+.banner__image {
+  margin: auto 0;
+}
