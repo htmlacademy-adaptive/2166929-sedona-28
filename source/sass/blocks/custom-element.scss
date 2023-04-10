@@ -41,7 +41,7 @@
 .custom-element-input[type="checkbox"]:checked + .custom-element-icon::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/input-checked.svg");
+  background-image: url("../img/input-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   top: 15px;
