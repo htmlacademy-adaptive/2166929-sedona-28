@@ -1,0 +1,72 @@
+.advantages__point {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__point-about {
+  background-color: $seagull;
+}
+
+.advantages__point-subtitle {
+  margin: 0 0 11px 0;
+
+  &--margin {
+    margin: 0 0 16px 0;
+  }
+}
+
+.advantages__point-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--color-margin {
+    gap: 49px;
+    background-color: $whisper;
+  }
+}
+
+.advantages__point-item {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  &--infrastructure {
+    padding: 8px 0 0 47px;
+  }
+
+  &--home {
+    background-image: url("../img/advantages-point-icon-home.svg");
+  }
+
+  &--food {
+    background-image: url("../img/advantages-point-icon-food.svg");
+  }
+
+  &--souvenirs {
+    background-image: url("../img/advantages-point-icon-souvenirs.svg");
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.advantages__point-number {
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $night-rider;
+  margin: 0 0 17px 0;
+
+  &--color {
+    color: $white;
+  }
+}

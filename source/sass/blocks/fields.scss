@@ -1,0 +1,43 @@
+.fields__container-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.fields__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fields__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.fields__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fields__item {
+  margin: 0 0 36px 0;
+}
+
+.fields__description {
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $night-rider;
+  opacity: 60%;
+  margin: 0;
+}

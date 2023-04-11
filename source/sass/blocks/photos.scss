@@ -1,0 +1,37 @@
+.photos__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.photos__item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.photos__title,
+.photos__description {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.photos__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+.photos__description {
+  color: $night-rider;
+  margin: 0;
+  padding: 0;
+}
+
+.photos__button {
+  align-self: flex-start;
+}

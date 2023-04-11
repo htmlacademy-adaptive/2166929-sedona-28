@@ -1,0 +1,51 @@
+.custom-element {
+  position: relative;
+}
+
+.custom-element__input-label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+  padding: 0 0 0 62px;
+}
+
+.custom-element-icon {
+  position: absolute;
+  display: inline-flex;
+  background-color: $white-smoke;
+  width: 46px;
+  height: 46px;
+  top: -10px;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    border-radius: 4px;
+  }
+}
+
+.custom-element-input[type="radio"]:checked + .custom-element-icon::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 16px;
+  height: 16px;
+  background-color: $night-rider;
+  border-radius: 50%;
+}
+
+.custom-element-input[type="checkbox"]:checked + .custom-element-icon::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/input-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+}

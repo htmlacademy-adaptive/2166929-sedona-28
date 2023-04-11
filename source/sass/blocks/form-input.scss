@@ -1,0 +1,32 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input-description {
+  font-family: $font-pt-sans;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $night-rider;
+  margin: 0 0 0 16px;
+}
+
+.form-input__input {
+  font-family: $font-pt-sans;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+  border: none;
+  background-color: $white-smoke;
+  padding: 16px;
+
+  &::placeholder {
+    opacity: 30%;
+  }
+
+  &--textarea {
+    resize: none;
+  }
+}

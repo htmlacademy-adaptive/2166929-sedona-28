@@ -1,0 +1,12 @@
+.description {
+  font-family: $font-pt-sans;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $night-rider;
+  margin: 0;
+
+  &--color {
+    color: $white;
+  }
+}

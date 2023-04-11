@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона — туристический городок в штате Аризона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -19,8 +21,8 @@
           <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
         </span>
         <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
-            <span class="navigation__link">Главная</span>
+          <li class="navigation__item">
+            <span class="navigation__link navigation__link--current">Главная</span>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="photo.html">Фото и видео</a>
@@ -39,59 +41,59 @@
       <section class="banner">
         <h1 class="visually-hidden">Седона — туристический городок в штате Аризона.</h1>
         <div class="banner__image">
-          <img src="img/main-welcome-text.svg" width="282" height="214" alt="Welcome — to the gorgeous Sedona.">
+          <img src="img/main-welcome-text.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
         </div>
       </section>
       <section class="advantages">
         <div class="advantages__info info">
           <h2 class="info__subtitle subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="info__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <p class="info__description description info__description--margin">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <div class="advantages__container-point">
           <figure class="advantages__point">
-            <figcaption class="advantages__point-about advantages__point-about--color">
-              <h3 class="advantages__point-subtitle subtitle">Настоящий городок</h3>
-              <span class="advantages__point-description description">— №1 —</span>
-              <p class="advantages__point-description description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <figcaption class="advantages__point-about">
+              <h3 class="advantages__point-subtitle subtitle subtitle--color">Настоящий городок</h3>
+              <span class="advantages__point-number advantages__point-number--color">— №1 —</span>
+              <p class="advantages__point-description description description--color">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </figcaption>
             <img class="advantages__point-image" src="img/advantages-photo-city.jpg" width="320" height="260" alt="Город Седона.">
           </figure>
-          <ul class="advantages__point advantages__point--infrastructure">
-            <li class="advantages__point-item advantages__point-item--home">
-              <h3 class="advantages__point-subtitle subtitle">Жилье</h3>
+          <ul class="advantages__point-list">
+            <li class="advantages__point-item advantages__point-item--infrastructure advantages__point-item--home">
+              <h3 class="advantages__point-subtitle subtitle advantages__point-subtitle--margin">Жилье</h3>
               <p class="advantages__point-description description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="advantages__point-item advantages__point-item--food">
-              <h3 class="advantages__point-subtitle subtitle">Еда</h3>
+            <li class="advantages__point-item advantages__point-item--infrastructure advantages__point-item--food">
+              <h3 class="advantages__point-subtitle subtitle advantages__point-subtitle--margin">Еда</h3>
               <p class="advantages__point-description description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </li>
-            <li class="advantages__point-item advantages__point-item--souvenirs">
-              <h3 class="advantages__point-subtitle subtitle">Сувениры</h3>
+            <li class="advantages__point-item advantages__point-item--infrastructure advantages__point-item--souvenirs">
+              <h3 class="advantages__point-subtitle subtitle advantages__point-subtitle--margin">Сувениры</h3>
               <p class="advantages__point-description description">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
           <figure class="advantages__point">
             <img class="advantages__point-image" src="img/advantages-photo-bridge.jpg" width="320" height="260" alt="Мост дьявола.">
-            <figcaption class="advantages__point-about advantages__point-about--color">
-              <h3 class="advantages__point-subtitle subtitle">Там есть мост дьявола</h3>
-              <span class="advantages__point-description description">— №2 —</span>
-              <p class="advantages__point-description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <figcaption class="advantages__point-about">
+              <h3 class="advantages__point-subtitle subtitle subtitle--color">Там есть мост дьявола</h3>
+              <span class="advantages__point-number advantages__point-number--color">— №2 —</span>
+              <p class="advantages__point-description description description--color">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </figcaption>
           </figure>
-          <ul class="advantages__point advantages__point--place">
-            <li class="advantages__point-item advantages__point-item--color">
+          <ul class="advantages__point-list advantages__point-list--color-margin">
+            <li class="advantages__point-item">
               <h3 class="advantages__point-subtitle subtitle">Небольшая площадь</h3>
-              <span class="advantages__point-description description">— №3 —</span>
+              <span class="advantages__point-number">— №3 —</span>
               <p class="advantages__point-description description">Все интересные места находятся очень близко</p>
             </li>
-            <li class="advantages__point-item advantages__point-item--color">
+            <li class="advantages__point-item">
               <h3 class="advantages__point-subtitle subtitle">Красивая дорога</h3>
-              <span class="advantages__point-description description">— №4 —</span>
+              <span class="advantages__point-number">— №4 —</span>
               <p class="advantages__point-description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="advantages__point-item advantages__point-item--color">
+            <li class="advantages__point-item">
               <h3 class="advantages__point-subtitle subtitle">Мало туристов</h3>
-              <span class="advantages__point-description description">— №5 —</span>
+              <span class="advantages__point-number">— №5 —</span>
               <p class="advantages__point-description description">Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
@@ -99,10 +101,10 @@
       </section>
 
       <section class="hotel-search">
-        <div class="hotel-search__container">
-          <h2 class="hotel-search__title title">Заинтересовались?</h2>
-          <p class="hotel-search__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="hotel-search__button button" href="#">Найти гостиницу</a>
+        <div class="hotel-search__info info">
+          <h2 class="info__title title info__title--margin-more">Заинтересовались?</h2>
+          <p class="info__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="info__button button" href="#">Найти гостиницу</a>
         </div>
       </section>
 
@@ -116,24 +118,24 @@
       <span class="footer__tag">#visitsedona</span>
       <ul class="footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#" target="_blank">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
             <span class="visually-hidden">Седона в Вконтакте.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="#" target="_blank">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank">
             <span class="visually-hidden">Седона в Телеграме.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#" target="_blank">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
             <span class="visually-hidden">Седона в Ютубе.</span>
           </a>
         </li>
       </ul>
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="visually-hidden">Переход на страницу разработчика.</span>
-        Разработано
+        <span class="footer__link-text">Разработано</span>
         <svg class="footer__icon" width="27" height="36" viewBox="0 0 27 36" fill="black" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.65 0.949951H13.55L0.0500488 2.34995V27.05L13.55 35.0499L26.95 27.05V2.34995L13.65 0.949951ZM25.05 13.05L13.55 6.24995V6.14995H13.45L13.35 6.04995V6.14995L1.95005 13.05V4.04995L13.45 2.84995L25.05 4.04995V13.05ZM13.45 7.74995L24.95 14.45L20.45 17.05L13.35 12.85V14.25L19.25 17.75L18.35 18.25L13.35 15.25V16.65L17.15 18.95L16.35 19.45L13.35 17.65V19.05L15.25 20.15L13.45 21.25L2.05005 14.55L13.45 7.74995ZM1.95005 16.05L13.35 22.85V23.85L5.45005 19.15V20.55L13.45 25.35V26.45L5.45005 21.75V23.15L13.45 27.95L21.55 23.05V17.85L24.95 15.85V25.85L13.45 32.75L1.95005 25.95V16.05Z" />
         </svg>
