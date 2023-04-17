@@ -11,23 +11,26 @@
 
 <body class="page__body">
   <div class="page__container">
-    <header class="header">
+    <header class="header no-js">
       <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню.</span>
+        <span class="header__toggle-line"></span>
+        <span class="header__toggle-line"></span>
+        <span class="header__toggle-line"></span>
       </button>
+      <a class="header__logo" href="index.html">
+        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
+      </a>
       <nav class="header__navigation navigation">
-        <a class="navigation__logo" href="index.html">
-          <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
-        </a>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="photo.html">Фото и видео</a>
+            <a class="navigation__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="navigation__item">
-            <span class="navigation__link">Форма отзыва</span>
+            <span class="navigation__link navigation__link--current">Форма отзыва</span>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html academy</a>
@@ -50,94 +53,92 @@
         </div>
         <form class="review-form__form fields" action="https://echo.htmlacademy.ru/" method="post">
           <div class="fields__container">
-            <div class="fields__container-contacts">
-              <fieldset class="fields__fieldset">
-                <legend class="fields__title">Представьтесь:</legend>
-                <label class="fields__label form-input">
-                  <span class="form-input-description">Иья*:</span>
-                  <input class="form-input__input" type="text" name="name" placeholder="Введите имя" value="Пётр" required>
-                </label>
-                <label class="fields__label form-input">
-                  <span class="form-input-description">Фамилия*:</span>
-                  <input class="form-input__input" type="text" name="surname" placeholder="Введите фамилию" value="Пустота" required>
-                </label>
-                <label class="fields__label form-input">
-                  <span class="form-input-description">Отчество:</span>
-                  <input class="form-input__input" name="patronymic" type="text" placeholder="Введите отчество" value="Викторович">
-                </label>
-              </fieldset>
-              <fieldset class="fields__fieldset">
-                <legend class="fields__title">Контактная информация:</legend>
-                <label class="fields__label form-input form-input--icon">
-                  <span class="form-input-description">Контактный телефон*:</span>
-                  <input class="form-input__input form-input__input--telephone" type="tel" name="telephone" placeholder="Введите телефон" required>
-                </label>
-                <label class="fields__label form-input form-input--icon">
-                  <span class="form-input-description">Электронная почта*:</span>
-                  <input class="form-input__input form-input__input--email" type="email" name="email" placeholder="Введите e-mail" required>
-                </label>
-              </fieldset>
-            </div>
-            <fieldset class="fields__fieldset">
+            <fieldset class="fields__fieldset fields__fieldset--user-information">
+              <legend class="fields__title">Представьтесь:</legend>
+              <label class="fields__label form-input">
+                <span class="form-input__description">Иья*:</span>
+                <input class="form-input__input" type="text" name="name" placeholder="Введите имя" value="Пётр" required>
+              </label>
+              <label class="fields__label form-input">
+                <span class="form-input__description">Фамилия*:</span>
+                <input class="form-input__input" type="text" name="surname" placeholder="Введите фамилию" value="Пустота" required>
+              </label>
+              <label class="fields__label form-input">
+                <span class="form-input__description">Отчество:</span>
+                <input class="form-input__input" name="patronymic" type="text" placeholder="Введите отчество" value="Викторович">
+              </label>
+            </fieldset>
+            <fieldset class="fields__fieldset fields__fieldset--contacts">
+              <legend class="fields__title">Контактная информация:</legend>
+              <label class="fields__label form-input form-input--icon">
+                <span class="form-input__description">Контактный телефон*:</span>
+                <input class="form-input__input form-input__input--telephone" type="tel" name="telephone" placeholder="Введите телефон" required>
+              </label>
+              <label class="fields__label form-input form-input--icon">
+                <span class="form-input__description">Электронная почта*:</span>
+                <input class="form-input__input form-input__input--email" type="email" name="email" placeholder="Введите e-mail" required>
+              </label>
+            </fieldset>
+            <fieldset class="fields__fieldset fields__fieldset--impression">
               <legend class="fields__title">Ваше общее впечатление:</legend>
               <ul class="fields__list">
                 <li class="fields__item">
                   <label class="fields__element custom-element">
-                    <input class="custom-element-input visually-hidden" type="radio" name="impression" value="positive" checked>
-                    <span class="custom-element-icon custom-element-icon--radio"></span>
+                    <input class="custom-element__input visually-hidden" type="radio" name="impression" value="positive" checked>
+                    <span class="custom-element__icon custom-element__icon--radio"></span>
                     <span class="custom-element__input-label">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="fields__item">
                   <label class="fields__element custom-element">
-                    <input class="custom-element-input visually-hidden" type="radio" name="impression" value="negative">
-                    <span class="custom-element-icon custom-element-icon--radio"></span>
+                    <input class="custom-element__input visually-hidden" type="radio" name="impression" value="negative">
+                    <span class="custom-element__icon custom-element__icon--radio"></span>
                     <span class="custom-element__input-label">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="fields__item">
                   <label class="fields__element custom-element">
-                    <input class="custom-element-input visually-hidden" type="radio" name="impression" value="no-answer">
-                    <span class="custom-element-icon custom-element-icon--radio"></span>
+                    <input class="custom-element__input visually-hidden" type="radio" name="impression" value="no-answer">
+                    <span class="custom-element__icon custom-element__icon--radio"></span>
                     <span class="custom-element__input-label">Затрудняюсь ответить</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="fields__fieldset">
+            <fieldset class="fields__fieldset fields__fieldset--attractions">
               <legend class="fields__title">Посещенные достопримечательности:</legend>
-              <ul class="fields__list">
+              <ul class="fields__list  fields__list--padding">
                 <li class="fields__item">
                   <label class="fields__element custom-element">
-                    <input class="custom-element-input visually-hidden" type="checkbox" name="attractions" value="devil-bridge" checked>
-                    <span class="custom-element-icon custom-element-icon--checkbox"></span>
+                    <input class="custom-element__input visually-hidden" type="checkbox" name="attractions" value="devil-bridge" checked>
+                    <span class="custom-element__icon custom-element__icon--checkbox"></span>
                     <span class="custom-element__input-label">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="fields__item">
                   <label class="fields__element custom-element">
-                    <input class="custom-element-input visually-hidden" type="checkbox" name="attractions" value="mount-bell" checked>
-                    <span class="custom-element-icon custom-element-icon--checkbox"></span>
+                    <input class="custom-element__input visually-hidden" type="checkbox" name="attractions" value="mount-bell" checked>
+                    <span class="custom-element__icon custom-element__icon--checkbox"></span>
                     <span class="custom-element__input-label">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="fields__item">
                   <label class="fields__element custom-element">
-                    <input class="custom-element-input visually-hidden" type="checkbox" name="attractions" value="slide-park" checked>
-                    <span class="custom-element-icon custom-element-icon--checkbox"></span>
+                    <input class="custom-element__input visually-hidden" type="checkbox" name="attractions" value="slide-park" checked>
+                    <span class="custom-element__icon custom-element__icon--checkbox"></span>
                     <span class="custom-element__input-label">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="fields__item">
                   <label class="fields__element custom-element">
-                    <input class="custom-element-input visually-hidden" type="checkbox" name="attractions" value="red-rocks">
-                    <span class="custom-element-icon custom-element-icon--checkbox"></span>
+                    <input class="custom-element__input visually-hidden" type="checkbox" name="attractions" value="red-rocks">
+                    <span class="custom-element__icon custom-element__icon--checkbox"></span>
                     <span class="custom-element__input-label">Красные скалы</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="fields__fieldset">
+            <fieldset class="fields__fieldset fields__fieldset--emotions">
               <legend class="fields__title">Опишите свои эмоции:</legend>
               <label class="fields__textarea form-input">
                 <span class="visually-hidden">Комментарий.</span>
@@ -145,8 +146,10 @@
               </label>
             </fieldset>
           </div>
-          <button class="fields__button button" type="submit">Отправить отзыв</button>
-          <p class="fields__description">* — обязательные поля</p>
+          <div class="fields__container-button">
+            <button class="fields__button button" type="submit">Отправить отзыв</button>
+            <p class="fields__description">* — обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
@@ -178,21 +181,28 @@
         </svg>
       </a>
     </footer>
-  </div class="page__container">
-  <div class="modal modal--close">
-    <div class="modal__content">
-      <h2 class="modal__title title">Что-то пошло не так!</h2>
-      <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button button">OK</button>
+    <!-- Для просмотра модального окна, надо блоку modal добавить класс is-open -->
+    <div class="modal">
+      <div class="modal__container modal__container--error">
+        <h2 class="modal__title title">Что-то пошло не так!</h2>
+          <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal__button button">OK</button>
+      </div>
+    </div>
+    <!-- Для просмотра модального окна, надо блоку modal добавить класс is-open -->
+    <div class="modal">
+      <div class="modal__container modal__container--success">
+        <div class="modal__content">
+          <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
+          <p class="modal__description description modal__description--margin">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="modal__button-container">
+          <button class="modal__button button modal__button--width">Закрыть окно</button>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="modal modal--close">
-    <div class="modal__content">
-      <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
-      <p class="modal__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="modal__button button">Закрыть окно</button>
-    </div>
-  </div>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

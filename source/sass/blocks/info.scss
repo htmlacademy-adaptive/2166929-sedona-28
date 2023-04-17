@@ -1,3 +1,7 @@
+.info {
+  text-align: center;
+}
+
 .info__subtitle {
   margin: 0 0 35px 0;
 }
@@ -15,5 +19,16 @@
 
   &--margin {
     margin: 0;
+  }
+}
+
+.info__button {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (min-width: $vp-768) {
+    width: auto;
+    padding: 14px 121px 17px 121px;
   }
 }

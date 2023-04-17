@@ -1,5 +1,48 @@
+.photos-cards__info {
+  padding: 30px 18px 44px 18px;
+
+  @media (min-width: $vp-768) {
+    padding: 66px 60px 67px 60px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 100px 120px 65px 120px;
+  }
+}
+
 .photos-cards__photos {
   display: flex;
   flex-direction: column;
+  padding: 24px 18px 25px 18px;
+
   gap: 50px;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    padding: 0 60px;
+
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $vp-1200) {
+    display: grid;
+    padding: 0;
+
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.photos__item {
+  &--popular {
+    @media (min-width: $vp-768) {
+      grid-column-end: 3;
+      grid-column-start: 1;
+    }
+
+    @media (min-width: $vp-1200) {
+      grid-column-end: 4;
+      grid-column-start: 1;
+    }
+  }
 }

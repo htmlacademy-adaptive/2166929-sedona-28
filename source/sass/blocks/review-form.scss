@@ -1,0 +1,23 @@
+.review-form {
+  padding: 20px;
+
+  @media (min-width: $vp-768) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 0 120px;
+  }
+}
+
+.review-form__info {
+  padding: 36px 18px 28px 18px;
+
+  @media (min-width: $vp-768) {
+    padding: 64px 60px 108px 60px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 115px 120px 68px 120px;
+  }
+}

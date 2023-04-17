@@ -1,11 +1,15 @@
 .button {
-  font-family: $font-pt-sans;
+  padding: 16px;
+
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
+  font-family: $font-pt-sans;
+  color: $white;
   text-transform: uppercase;
   text-decoration: none;
-  border: none;
-  color: $white;
+
   background-color: $seagull;
+  border: none;
+  cursor: pointer;
 }

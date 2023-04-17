@@ -1,10 +1,28 @@
 .like {
-  font-family: $font-pt-sans;
+  display: flex;
+  padding: 0;
+
+  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 700;
+  font-family: $font-pt-sans;
   color: $black;
+
   background-color: $transparent;
   border: none;
-  padding: 0;
+
+  gap: 9px;
+}
+
+.like__icon {
+  opacity: 30%;
+
+  @media (min-width: $vp-1200) {
+    fill: $white;
+    opacity: 100%;
+  }
+}
+
+.like__number {
+  margin: 4px 0 0 0;
 }
