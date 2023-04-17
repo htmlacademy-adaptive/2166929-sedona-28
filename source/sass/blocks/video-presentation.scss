@@ -1,0 +1,33 @@
+.video-presentation__info {
+  padding: 17px 18px 38px 18px;
+
+  @media (min-width: $vp-768) {
+    padding: 58px 60px 66px 60px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 62px 120px 64px 120px;
+  }
+}
+
+.video-presentation__player {
+  padding: 0 18px;
+
+  @media (min-width: $vp-768) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 0 200px;
+  }
+}
+
+.video-presentation__image {
+  width: 100%;
+  object-fit: cover;
+  max-height: 177px;
+
+  @media (min-width: $vp-768) {
+    max-height: 500px;
+  }
+}

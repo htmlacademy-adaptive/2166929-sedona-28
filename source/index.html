@@ -12,14 +12,17 @@
 
 <body class="page__body">
   <div class="page__container">
-    <header class="header">
+    <header class="header no-js">
       <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню.</span>
+        <span class="header__toggle-line"></span>
+        <span class="header__toggle-line"></span>
+        <span class="header__toggle-line"></span>
       </button>
+      <span class="header__logo">
+        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
+      </span>
       <nav class="header__navigation navigation">
-        <span class="navigation__logo">
-          <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
-        </span>
         <ul class="navigation__list">
           <li class="navigation__item">
             <span class="navigation__link navigation__link--current">Главная</span>
@@ -51,14 +54,14 @@
         </div>
         <div class="advantages__container-point">
           <figure class="advantages__point">
-            <figcaption class="advantages__point-about">
-              <h3 class="advantages__point-subtitle subtitle subtitle--color">Настоящий городок</h3>
-              <span class="advantages__point-number advantages__point-number--color">— №1 —</span>
-              <p class="advantages__point-description description description--color">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <figcaption class="advantages__point-about advantages__point-about--padding">
+              <h3 class="advantages__point-subtitle subtitle subtitle--white">Настоящий городок</h3>
+              <span class="advantages__point-number advantages__point-number--white">— №1 —</span>
+              <p class="advantages__point-description description description--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </figcaption>
             <img class="advantages__point-image" src="img/advantages-photo-city.jpg" width="320" height="260" alt="Город Седона.">
           </figure>
-          <ul class="advantages__point-list">
+          <ul class="advantages__point-list advantages__point-list--padding advantages__point-list--text-align">
             <li class="advantages__point-item advantages__point-item--infrastructure advantages__point-item--home">
               <h3 class="advantages__point-subtitle subtitle advantages__point-subtitle--margin">Жилье</h3>
               <p class="advantages__point-description description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -75,12 +78,12 @@
           <figure class="advantages__point">
             <img class="advantages__point-image" src="img/advantages-photo-bridge.jpg" width="320" height="260" alt="Мост дьявола.">
             <figcaption class="advantages__point-about">
-              <h3 class="advantages__point-subtitle subtitle subtitle--color">Там есть мост дьявола</h3>
-              <span class="advantages__point-number advantages__point-number--color">— №2 —</span>
-              <p class="advantages__point-description description description--color">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <h3 class="advantages__point-subtitle subtitle subtitle--white">Там есть мост дьявола</h3>
+              <span class="advantages__point-number advantages__point-number--white">— №2 —</span>
+              <p class="advantages__point-description description description--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </figcaption>
           </figure>
-          <ul class="advantages__point-list advantages__point-list--color-margin">
+          <ul class="advantages__point-list advantages__point-list--whisper-light advantages__point-list--gap">
             <li class="advantages__point-item">
               <h3 class="advantages__point-subtitle subtitle">Небольшая площадь</h3>
               <span class="advantages__point-number">— №3 —</span>
@@ -142,6 +145,7 @@
       </a>
     </footer>
   </div>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,14 @@
 .title {
-  font-family: $font-pt-sans;
+  margin: 0;
+
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: $font-pt-sans;
   color: $black;
-  margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    font-size: 30px;
+  }
 }

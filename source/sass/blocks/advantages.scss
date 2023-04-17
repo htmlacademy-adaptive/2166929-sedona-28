@@ -1,12 +1,57 @@
+.advantages__info {
+  padding: 32px 18px 16px 18px;
+
+  @media (min-width: $vp-768) {
+    padding: 47px 60px 56px 60px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 59px 120px 45px 120px;
+  }
+}
+
 .advantages__point {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+  }
 }
 
 .advantages__point-about {
+  padding: 37px 18px;
+
+  text-align: center;
+
   background-color: $seagull;
+
+  &--padding {
+    padding: 54px 18px 40px 18px;
+  }
+
+  @media (min-width: $vp-768) {
+    min-width: 256px;
+    padding: 52px 33px 31px 33px;
+  }
+
+  @media (min-width: $vp-1200) {
+    min-width: 400px;
+    padding: 52px 50px 51px 50px;
+  }
+}
+
+.advantages__point-image {
+  width: 100%;
+  max-height: 260px;
+
+  object-fit: cover;
+
+  @media (min-width: $vp-768) {
+    max-height: 256px;
+  }
 }
 
 .advantages__point-subtitle {
@@ -20,20 +65,47 @@
 .advantages__point-list {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 24px 18px 28px 18px;
 
-  &--color-margin {
+  list-style: none;
+  text-align: center;
+
+  gap: 25px;
+
+  &--padding {
+    padding: 23px 18px 46px 18px;
+  }
+
+  &--text-align {
+    text-align: left;
+  }
+
+  &--whisper-light {
+    background-color: $whisper-light;
+  }
+
+  &--gap {
     gap: 49px;
-    background-color: $whisper;
+  }
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    flex-direction: row;
+    min-height: 256px;
+    padding: 0;
+
+    text-align: center;
+
+    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .advantages__point-item {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   background-repeat: no-repeat;
   background-position: left top;
 
@@ -56,17 +128,26 @@
   &:last-child {
     margin: 0;
   }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 33px 41px;
+  }
 }
 
 .advantages__point-number {
   display: inline-flex;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: $night-rider;
   margin: 0 0 17px 0;
 
-  &--color {
+  font-size: 14px;
+  line-height: 21px;
+  color: $night-rider;
+  text-transform: uppercase;
+
+  &--white {
     color: $white;
   }
 }

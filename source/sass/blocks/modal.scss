@@ -1,1 +1,85 @@
-//
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background-color: rgba($color: $black, $alpha: 0.3);
+  display: none;
+
+  &.is-open {
+    display: flex;
+  }
+}
+
+.modal__container {
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  width: 100%;
+
+  &--error {
+    max-width: 400px;
+    padding: 45px 42px 35px 41px;
+
+    @media (min-width: $vp-768) {
+      padding: 55px 47px 49px 46px;
+    }
+  }
+
+  &--success {
+    max-width: 640px;
+    padding: 0;
+  }
+}
+
+.modal__content {
+  padding: 36px 39px 54px 37px;
+
+  @media (min-width: $vp-768) {
+    padding: 58px 99px 47px 97px;
+  }
+}
+
+.modal__title {
+  margin: 0 0 25px 0;
+}
+
+.modal__description {
+  margin: 0 0 28px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 47px 0;
+  }
+
+  &--margin {
+    margin: 0;
+  }
+}
+
+.modal__button-container {
+  padding: 20px;
+  background-color: $white-smoke;
+
+  @media (min-width: $vp-768) {
+    padding: 44px 91px;
+  }
+}
+
+.modal__button {
+  width: auto;
+  padding: 18px 79px 14px 77px;
+
+  &--width {
+    width: 100%;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 100%;
+  }
+}

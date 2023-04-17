@@ -1,43 +1,185 @@
-.fields__container-contacts {
+.fields {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+
+  gap: 56px;
+
+  @media (min-width: $vp-768) {
+    gap: 48px;
+  }
+}
+
+.fields__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fields__container-button {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  & .fields__description {
+    align-self: flex-end;
+
+    @media (min-width: $vp-768) {
+      align-self: flex-start;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .fields__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  border: none;
-  margin: 0;
+  width: 100%;
+  margin: 0 0 64px 0;
   padding: 0;
+
+  border: none;
+
+  gap: 16px;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 63px 0;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin: 0 0 71px 0;
+  }
+
+  &--user-information {
+    @media (min-width: $vp-768) {
+      width: calc(50% - 29px);
+    }
+
+    @media (min-width: $vp-1200) {
+      width: calc(50% - 50px);
+    }
+  }
+
+  &--contacts {
+    margin: 0 0 59px 0;
+
+    @media (min-width: $vp-768) {
+      width: calc(50% - 29px);
+    }
+
+    @media (min-width: $vp-1200) {
+      width: calc(50% - 50px);
+    }
+  }
+
+  &--impression {
+    margin: 0 0 49px 0;
+
+    @media (min-width: $vp-768) {
+      margin: 0 0 48px 0;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin: 0 0 56px 0;
+    }
+  }
+
+  &--attractions {
+    margin: 0 0 49px 0;
+
+    @media (min-width: $vp-768) {
+      margin: 0 0 42px 0;
+    }
+
+    @media (min-width: $vp-1200) {
+      margin: 0 0 56px 0;
+    }
+  }
+
+  &:last-of-type {
+    margin: 0;
+  }
 }
 
 .fields__title {
+  margin: 0 0 20px 0;
+
+  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
 }
 
 .fields__list {
   display: flex;
   flex-direction: column;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
+
+  gap: 16px;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    padding: 0 36px;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $vp-1200) {
+    display: flex;
+    flex-direction: row;
+    padding: 0 53px;
+
+    gap: 28px;
+  }
+
+  &--padding {
+    @media (min-width: $vp-768) {
+      padding: 0 84px;
+    }
+
+    @media (min-width: $vp-1200) {
+      padding: 0 53px;
+    }
+  }
 }
 
 .fields__item {
-  margin: 0 0 36px 0;
+  padding: 10px 0;
 }
 
 .fields__description {
+  margin: 0;
+
   font-size: 12px;
   line-height: 21px;
-  text-transform: uppercase;
   color: $night-rider;
+  text-transform: uppercase;
+
   opacity: 60%;
-  margin: 0;
+
+  @media (min-width: $vp-768) {
+    margin: 23px 0 0 0;
+  }
+}
+
+.fields__button {
+  width: 100%;
+
+  @media (min-width: $vp-768) {
+    width: auto;
+    padding: 16px 71px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 16px 101px;
+  }
 }

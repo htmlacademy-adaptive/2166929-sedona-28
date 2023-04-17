@@ -1,16 +1,30 @@
 .banner {
   display: flex;
   flex-direction: column;
+  min-height: 389px;
+
   background-color: $white-smoke;
   background-image: url("../img/banner-background-image.jpg");
   background-repeat: no-repeat;
-  min-height: 389px;
+  background-size: cover;
+
+  @media (min-width: $vp-768) {
+    min-height: 518px;
+  }
 
   &--inner {
     min-height: 158px;
+
+    @media (min-width: $vp-768) {
+      min-height: 290px;
+    }
+
+    @media (min-width: $vp-1200) {
+      min-height: 301px;
+    }
   }
 }
 
 .banner__image {
-  margin: auto 0;
+  margin: auto;
 }

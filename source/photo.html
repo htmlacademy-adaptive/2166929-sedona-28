@@ -11,14 +11,17 @@
 
 <body class="page__body">
   <div class="page__container">
-    <header class="header">
+    <header class="header no-js">
       <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню.</span>
+        <span class="header__toggle-line"></span>
+        <span class="header__toggle-line"></span>
+        <span class="header__toggle-line"></span>
       </button>
+      <a class="header__logo" href="index.html">
+        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
+      </a>
       <nav class="header__navigation navigation">
-        <a class="navigation__logo" href="index.html">
-          <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
-        </a>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
@@ -48,64 +51,68 @@
           <h2 class="info__title title">Фото и видео</h2>
           <p class="info__description description info__description--margin">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
-      <div class="photos-cards__photos photos container">
+      <div class="photos-cards__photos photos">
         <figure class="photos__item photos__item--popular">
           <a class="photos__link" href="#">
-            <img src="img/photo-expanses.jpg" width="280" height="280" alt="Просторы Седоны.">
+            <img class="photos__image" src="img/photo-expanses.jpg" width="280" height="280" alt="Просторы Седоны.">
           </a>
           <figcaption class="photos__item-container">
             <div class="photos__item-text-container">
               <h3 class="photos__title photos__title--color">Неродные просторы</h3>
-              <p class="photos__description photos__description--color">Автор фото: Борис</p>
+              <p class="photos__description photos__description--white">Автор фото: Борис</p>
             </div>
             <button class="photos__button like like--color" type="button">
               <span class="visually-hidden">Поставить лайк.</span>
-              1350
+              <svg class="like__icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="#000"><path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/></svg>
+              <span class="like__number">1350</span>
             </button>
           </figcaption>
         </figure>
         <figure class="photos__item">
           <a class="photos__link" href="#">
-            <img src="img/photo-vegetation.jpg" width="280" height="280" alt="Растительность Седоны.">
+            <img class="photos__image" src="img/photo-vegetation.jpg" width="280" height="280" alt="Растительность Седоны.">
           </a>
           <figcaption class="photos__item-container">
             <div class="photos__item-text-container">
               <h3 class="photos__title photos__title--color">Местная растительность</h3>
-              <p class="photos__description photos__description--color">Автор фото: Сергей</p>
+              <p class="photos__description photos__description--white">Автор фото: Сергей</p>
             </div>
             <button class="photos__button like like--color" type="button">
               <span class="visually-hidden">Поставить лайк.</span>
-              143
+              <svg class="like__icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="#000"><path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/></svg>
+              <span class="like__number">143</span>
             </button>
           </figcaption>
         </figure>
         <figure class="photos__item">
           <a class="photos__link" href="#">
-            <img src="img/photo-road.jpg" width="280" height="280" alt="Дорога на север Седоны.">
+            <img class="photos__image" src="img/photo-road.jpg" width="280" height="280" alt="Дорога на север Седоны.">
           </a>
-          <figcaption class="photos__item-container">
+          <figcaption class="photos__item-container photos__item-container--whisper">
             <div class="photos__item-text-container">
               <h3 class="photos__title photos__title--color">Дорога на север</h3>
-              <p class="photos__description photos__description--color">Автор фото: Петр</p>
+              <p class="photos__description photos__description--white">Автор фото: Петр</p>
             </div>
             <button class="photos__button like like--color" type="button">
               <span class="visually-hidden">Поставить лайк.</span>
-              96
+              <svg class="like__icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="#000"><path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/></svg>
+              <span class="like__number">96</span>
             </button>
           </figcaption>
         </figure>
         <figure class="photos__item">
           <a class="photos__link" href="#">
-            <img src="img/photo-bridge.jpg" width="280" height="280" alt="Мост дьявола в Седоне.">
+            <img class="photos__image" src="img/photo-bridge.jpg" width="280" height="280" alt="Мост дьявола в Седоне.">
           </a>
           <figcaption class="photos__item-container">
             <div class="photos__item-text-container">
               <h3 class="photos__title photos__title--color">Мост дьявола</h3>
-              <p class="photos__description photos__description--color">Автор фото: Антон</p>
+              <p class="photos__description photos__description--white">Автор фото: Антон</p>
             </div>
             <button class="photos__button like like--color" type="button">
               <span class="visually-hidden">Поставить лайк.</span>
-              254
+              <svg class="like__icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="#000"><path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/></svg>
+              <span class="like__number">254</span>
             </button>
           </figcaption>
         </figure>
@@ -116,9 +123,9 @@
           <h2 class="info__title title">Все еще сомневаетесь?</h2>
           <p class="info__description description info__description--margin">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <div class="video-presentation__link" href="#">
+        <div class="video-presentation__player" href="#">
           <img class="video-presentation__image" src="img/video.jpg" width="280" height="177" alt="Видеопрезентация.">
-          <a class="video-presentation__player" href="#">
+          <a class="video-presentation__link" href="#">
             <span class="visually-hidden">Начать просмотр.</span>
           </a>
         </div>
@@ -153,6 +160,7 @@
       </a>
     </footer>
   </div>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

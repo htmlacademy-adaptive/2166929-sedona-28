@@ -1,20 +1,27 @@
 .page,
 .page__body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
 }
 
 .page__body {
-  font-family: $font-pt-sans;
+  width: 100%;
+
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
+  font-family: $font-pt-sans;
   color: $black;
+
   background-color: $white-smoke;
-  width: 100%;
 }
 
 .page__container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 280px;
+  margin: 0 auto;
   background-color: $white;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
