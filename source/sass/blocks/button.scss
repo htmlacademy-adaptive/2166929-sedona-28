@@ -12,4 +12,14 @@
   background-color: $seagull;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $seagull-hover;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+
+    background-color: $seagull-active;
+  }
 }

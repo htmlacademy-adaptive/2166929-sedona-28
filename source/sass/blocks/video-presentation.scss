@@ -2,32 +2,53 @@
   padding: 17px 18px 38px 18px;
 
   @media (min-width: $vp-768) {
-    padding: 58px 60px 66px 60px;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 58px 60px 44px 60px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 62px 120px 64px 120px;
+    max-width: 690px;
+    padding: 62px 120px 40px 120px;
   }
 }
 
 .video-presentation__player {
+  position: relative;
+
   padding: 0 18px;
 
   @media (min-width: $vp-768) {
-    padding: 0 60px;
+    padding: 44px 60px 40px 60px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 0 200px;
+    padding: 40px 200px 84px 200px;
   }
 }
 
 .video-presentation__image {
+  display: block;
   width: 100%;
-  object-fit: cover;
   max-height: 177px;
 
+  object-fit: cover;
+
   @media (min-width: $vp-768) {
-    max-height: 500px;
+    min-height: 500px;
   }
+}
+
+.video-presentation__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 48px;
+  height: 54px;
+
+  background-color: rgba($white, 0.7);
+  transform: translate(-50%, -50%);
+
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
 }

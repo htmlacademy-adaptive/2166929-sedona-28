@@ -30,11 +30,38 @@
   }
 
   &--textarea {
-    resize: none;
     min-height: 150px;
+
+    resize: none;
 
     @media (min-width: $vp-768) {
       min-height: 160px;
     }
+  }
+
+  &--telephone,
+  &--email {
+    padding: 16px 75px 16px 16px;
+
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &--telephone {
+    background-image: url("../img/input-telephone-icon.svg");
+  }
+
+  &--email {
+    background-image: url("../img/input-email-icon.svg");
+  }
+
+  .form-input:hover & {
+    background-color: $whisper-dark;
+  }
+
+  .form-input:active & {
+    background-color: $white;
+    outline: 4px solid $whisper-dark;
+    outline-offset: -4px;
   }
 }

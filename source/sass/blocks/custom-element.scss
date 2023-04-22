@@ -22,6 +22,7 @@
   height: 46px;
 
   background-color: $white-smoke;
+  cursor: pointer;
 
   &--radio {
     border-radius: 50%;
@@ -29,6 +30,14 @@
 
   &--checkbox {
     border-radius: 4px;
+  }
+
+  .custom-element:hover & {
+    background-color: $whisper-dark;
+  }
+
+  .custom-element:active & {
+    background-color: $light-grey;
   }
 }
 
@@ -45,6 +54,10 @@
   border-radius: 50%;
 }
 
+.custom-element:active .custom-element__input[type="radio"]:checked + .custom-element__icon::after {
+  background-color: rgba($night-rider, 0.3);
+}
+
 .custom-element__input[type="checkbox"]:checked + .custom-element__icon::after {
   content: "";
   position: absolute;
@@ -57,4 +70,8 @@
   background-image: url("../img/input-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.custom-element:active .custom-element__input[type="checkbox"]:checked + .custom-element__icon::after {
+  opacity: 30%;
 }

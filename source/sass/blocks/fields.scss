@@ -1,11 +1,18 @@
 .fields {
   display: flex;
   flex-direction: column;
+  padding: 0;
 
   gap: 56px;
 
   @media (min-width: $vp-768) {
+    padding: 54px 64px 64px 64px;
+
     gap: 48px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 34px 120px 63px 120px;
   }
 }
 
@@ -37,11 +44,13 @@
 }
 
 .fields__fieldset {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0 0 64px 0;
-  padding: 0;
+  margin: 0;
+  padding: 24px 20px;
 
   border: none;
 
@@ -49,6 +58,9 @@
 
   @media (min-width: $vp-768) {
     margin: 0 0 63px 0;
+    padding: 0;
+
+    border-top: 1px solid $gainsboro;
   }
 
   @media (min-width: $vp-1200) {
@@ -56,17 +68,42 @@
   }
 
   &--user-information {
+    border: none;
+
+
     @media (min-width: $vp-768) {
+      position: relative;
+
       width: calc(50% - 29px);
     }
 
     @media (min-width: $vp-1200) {
       width: calc(50% - 50px);
+    }
+
+    &::before {
+      @media (min-width: $vp-768) {
+        content: "";
+        position: absolute;
+        top: -82px;
+        right: -29px;
+
+        width: 1px;
+        height: calc(100% + 90px);
+
+        background-color: $gainsboro;
+      }
+
+      @media (min-width: $vp-1200) {
+        right: -50px;
+      }
     }
   }
 
   &--contacts {
-    margin: 0 0 59px 0;
+    position: relative;
+
+    border: none;
 
     @media (min-width: $vp-768) {
       width: calc(50% - 29px);
@@ -75,11 +112,27 @@
     @media (min-width: $vp-1200) {
       width: calc(50% - 50px);
     }
+
+    &::before {
+      @media (min-width: $vp-768) {
+        content: "";
+        position: absolute;
+        top: -82px;
+        left: -30px;
+
+        width: 1px;
+        height: calc(100% + 90px);
+
+        background-color: $gainsboro;
+      }
+
+      @media (min-width: $vp-1200) {
+        left: -51px;
+      }
+    }
   }
 
   &--impression {
-    margin: 0 0 49px 0;
-
     @media (min-width: $vp-768) {
       margin: 0 0 48px 0;
     }
@@ -90,8 +143,6 @@
   }
 
   &--attractions {
-    margin: 0 0 49px 0;
-
     @media (min-width: $vp-768) {
       margin: 0 0 42px 0;
     }
@@ -107,6 +158,7 @@
 }
 
 .fields__title {
+  width: 100%;
   margin: 0 0 20px 0;
 
   font-weight: 700;
@@ -114,6 +166,42 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  transform: translate(0, 24px);
+
+  @media (min-width: $vp-768) {
+    max-width: 400px;
+    margin: 0 0 28px 0;
+
+    font-size: 21px;
+    line-height: 26px;
+
+    transform: translate(0, 0);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: -22px;
+
+    width: calc(100% + 44px);
+    height: 1px;
+
+    background-color: $whisper-dark;
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+  }
+
+  &--user-information & {
+    min-width: auto;
+  }
+
+  &--contacts & {
+    min-width: auto;
+  }
 }
 
 .fields__list {
@@ -136,7 +224,7 @@
   @media (min-width: $vp-1200) {
     display: flex;
     flex-direction: row;
-    padding: 0 53px;
+    padding: 17px 53px;
 
     gap: 28px;
   }
@@ -147,7 +235,7 @@
     }
 
     @media (min-width: $vp-1200) {
-      padding: 0 53px;
+      padding: 31px 53px;
     }
   }
 }

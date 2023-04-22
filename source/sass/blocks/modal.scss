@@ -5,13 +5,14 @@
   bottom: 0;
   left: 0;
   z-index: 3;
+
+  display: none;
   justify-content: center;
   align-items: center;
 
   text-align: center;
 
-  background-color: rgba($color: $black, $alpha: 0.3);
-  display: none;
+  background-color: rgba($black, 0.3);
 
   &.is-open {
     display: flex;
@@ -19,9 +20,10 @@
 }
 
 .modal__container {
+  width: 100%;
+
   background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-  width: 100%;
 
   &--error {
     max-width: 400px;
@@ -64,6 +66,7 @@
 
 .modal__button-container {
   padding: 20px;
+
   background-color: $white-smoke;
 
   @media (min-width: $vp-768) {

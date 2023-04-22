@@ -2,10 +2,13 @@
   padding: 30px 18px 44px 18px;
 
   @media (min-width: $vp-768) {
+    max-width: 560px;
+    margin: 0 auto;
     padding: 66px 60px 67px 60px;
   }
 
   @media (min-width: $vp-1200) {
+    max-width: 680px;
     padding: 100px 120px 65px 120px;
   }
 }
