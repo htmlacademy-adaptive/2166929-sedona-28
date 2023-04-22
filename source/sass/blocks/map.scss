@@ -1,3 +1,17 @@
+.map {
+  position: relative;
+}
+
+.map__iframe {
+  position: absolute;
+  border: none;
+  width: 100%;
+  z-index: 2;
+  max-height: 350px;
+  top: 0;
+  left: 0;
+}
+
 .map__image {
   width: 100%;
   max-height: 350px;

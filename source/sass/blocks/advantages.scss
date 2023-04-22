@@ -2,10 +2,13 @@
   padding: 32px 18px 16px 18px;
 
   @media (min-width: $vp-768) {
+    max-width: 610px;
+    margin: 0 auto;
     padding: 47px 60px 56px 60px;
   }
 
   @media (min-width: $vp-1200) {
+    max-width: 730px;
     padding: 59px 120px 45px 120px;
   }
 }
@@ -30,6 +33,14 @@
 
   &--padding {
     padding: 54px 18px 40px 18px;
+  }
+
+  &--figure {
+    clip-path: polygon(50% 18%, 100% 11%, 100% 100%, 0 100%, 0 11%);
+
+    @media (min-width: $vp-768) {
+      clip-path: none;
+    }
   }
 
   @media (min-width: $vp-768) {
@@ -92,7 +103,6 @@
   @media (min-width: $vp-768) {
     display: grid;
     flex-direction: row;
-    min-height: 256px;
     padding: 0;
 
     text-align: center;
@@ -103,6 +113,8 @@
 }
 
 .advantages__point-item {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -113,20 +125,75 @@
     padding: 8px 0 0 47px;
   }
 
-  &--home {
+  &--home::before,
+  &--food::before,
+  &--souvenirs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background-repeat: no-repeat;
+
+    @media (min-width: $vp-768) {
+      left: 50%;
+
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &--home::before {
     background-image: url("../img/advantages-point-icon-home.svg");
+
+    @media (min-width: $vp-768) {
+      top: 60px;
+
+      width: 77px;
+      height: 72px;
+
+      background-size: 77px 72px;
+    }
+
+    @media (min-width: $vp-1200) {
+      top: 69px;
+    }
   }
 
-  &--food {
+  &--food::before {
     background-image: url("../img/advantages-point-icon-food.svg");
+
+    @media (min-width: $vp-768) {
+      top: 62px;
+
+      width: 80px;
+      height: 68px;
+
+      background-size: 80px 68px;
+    }
+
+    @media (min-width: $vp-1200) {
+      top: 72px;
+    }
   }
 
-  &--souvenirs {
+  &--souvenirs::before {
     background-image: url("../img/advantages-point-icon-souvenirs.svg");
-  }
 
-  &:last-child {
-    margin: 0;
+    @media (min-width: $vp-768) {
+      top: 64px;
+
+      width: 66px;
+      height: 75px;
+
+      background-size: 66px 75px;
+    }
+
+    @media (min-width: $vp-1200) {
+      top: 69px;
+    }
   }
 
   @media (min-width: $vp-768) {
@@ -134,7 +201,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 33px 41px;
+    align-self: flex-start;
+    padding: 156px 50px 60px 50px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 168px 50px 69px 50px;
+  }
+
+  &--padding {
+    @media (min-width: $vp-768) {
+      padding: 42px 33px 41px 33px;
+    }
+
+    @media (min-width: $vp-1200) {
+      padding: 52px 50px 52px 50px;
+    }
+  }
+
+  &:last-child {
+    margin: 0;
   }
 }
 

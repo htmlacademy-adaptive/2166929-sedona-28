@@ -12,6 +12,14 @@
   border: none;
 
   gap: 9px;
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:active {
+    opacity: 40%;
+  }
 }
 
 .like__icon {

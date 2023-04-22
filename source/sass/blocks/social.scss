@@ -16,28 +16,8 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &--vkontakte::before {
-    content: "";
-    position: absolute;
-
-    width: 24px;
-    height: 24px;
-
-    background-image: url("../img/social-icon-vk.svg");
-    transform: translate(50%, 50%);
-  }
-
-  &--telegram::before {
-    content: "";
-    position: absolute;
-
-    width: 24px;
-    height: 24px;
-
-    background-image: url("../img/social-icon-telegram.svg");
-    transform: translate(50%, 50%);
-  }
-
+  &--vkontakte::before,
+  &--telegram::before,
   &--youtube::before {
     content: "";
     position: absolute;
@@ -45,8 +25,19 @@
     width: 24px;
     height: 24px;
 
-    background-image: url("../img/social-icon-youtube.svg");
     transform: translate(50%, 50%);
+  }
+
+  &--vkontakte::before {
+    background-image: url("../img/social-icon-vk.svg");
+  }
+
+  &--telegram::before {
+    background-image: url("../img/social-icon-telegram.svg");
+  }
+
+  &--youtube::before {
+    background-image: url("../img/social-icon-youtube.svg");
   }
 
   &:hover {

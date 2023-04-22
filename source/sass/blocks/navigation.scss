@@ -1,4 +1,5 @@
 .navigation__list {
+  position: relative;
   z-index: 2;
 
   margin: 0;
@@ -8,6 +9,15 @@
 
   background-color: $seagull;
 
+  &::before {
+    @media (min-width: $vp-768) {
+      content: "";
+
+      grid-column: 3/4;
+      grid-row: span 2;
+    }
+  }
+
   @media (min-width: $vp-768) {
     z-index: 1;
 
@@ -15,19 +25,14 @@
 
     background-color: $white;
 
+    grid-auto-flow: dense;
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
-.navigation__item {
-  &:nth-child(4n + 3) {
-    @media (min-width: $vp-768) {
-      grid-column-start: 4;
-    }
-  }
-}
-
 .navigation__link {
+  position: relative;
+
   display: inline-flex;
   justify-content: center;
   width: 100%;
@@ -55,6 +60,22 @@
     box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
   }
 
+  .navigation__item:last-child &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+  }
+
   &:hover {
     background-color: $seagull-hover;
 
@@ -66,12 +87,12 @@
   }
 
   &:active {
-    color: rgba($color: $white, $alpha: 0.3);
+    color: rgba($white, 0.3);
 
     background-color: $seagull-active;
 
     @media (min-width: $vp-768) {
-      color: rgba($color: $black, $alpha: 0.3);
+      color: rgba($black, 0.3);
 
       background-color: $white;
     }
