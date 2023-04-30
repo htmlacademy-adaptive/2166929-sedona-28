@@ -23,7 +23,20 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    max-width: 250px;
+
+    text-align: left;
+  }
+
+  @media (min-width: $vp-1200) {
+    max-width: 300px;
+
+    text-align: left;
+  }
 }
 
 .footer__social {
@@ -42,26 +55,34 @@
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-.footer__link-text {
-  margin: 7px 12px 0 0;
-
-  .footer__link:hover & {
+  &:hover {
     color: $seagull;
   }
 
-  .footer__link:active & {
+  &:active {
     color: $pink-swan;
+  }
+
+  &:focus {
+    color: $black;
+
+    outline: 2px solid $seagull;
+    outline-offset: 2px;
   }
 }
 
-.footer__icon {
-  .footer__link:hover & {
-    fill: $seagull;
+.footer__link-text {
+  max-width: 300px;
+  margin: 7px 12px 0 0;
+
+  text-align: right;
+
+  @media (min-width: $vp-768) {
+    max-width: 140px;
   }
 
-  .footer__link:active & {
-    fill: $pink-swan;
+  @media (min-width: $vp-1200) {
+    max-width: 250px;
   }
 }

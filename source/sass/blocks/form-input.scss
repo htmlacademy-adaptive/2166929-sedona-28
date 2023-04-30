@@ -48,11 +48,11 @@
   }
 
   &--telephone {
-    background-image: url("../img/input-telephone-icon.svg");
+    background-image: url("../img/form-input/input-telephone-icon.svg");
   }
 
   &--email {
-    background-image: url("../img/input-email-icon.svg");
+    background-image: url("../img/form-input/input-email-icon.svg");
   }
 
   .form-input:hover & {
@@ -63,5 +63,28 @@
     background-color: $white;
     outline: 4px solid $whisper-dark;
     outline-offset: -4px;
+  }
+
+  &:focus {
+    background-color: $white-smoke;
+    outline: 3px solid $seagull;
+  }
+
+  .form-input:hover &:focus {
+    background-color: $white-smoke;
+  }
+
+  &:disabled {
+    background-color: $gainsboro;
+    outline: none;
+
+    pointer-events: none;
+  }
+
+  &:hover:disabled {
+    background-color: $gainsboro;
+    outline: none;
+
+    pointer-events: none;
   }
 }

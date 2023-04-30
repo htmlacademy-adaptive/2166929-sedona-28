@@ -20,17 +20,32 @@
   &:active {
     opacity: 40%;
   }
+
+  &:focus {
+    outline: 3px solid $seagull;
+    outline-offset: 3px;
+    opacity: 100%;
+  }
 }
 
 .like__icon {
   opacity: 30%;
 
   @media (min-width: $vp-1200) {
-    fill: $white;
     opacity: 100%;
+
+    fill: $white;
   }
 }
 
 .like__number {
   margin: 4px 0 0 0;
+
+  @media (min-width: $vp-768) {
+    max-width: 70px;
+  }
+
+  @media (min-width: $vp-1200) {
+    max-width: 100px;
+  }
 }
