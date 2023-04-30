@@ -20,7 +20,15 @@
   padding: 0;
 
   @media (min-width: $vp-768) {
-    flex-direction: row;
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &--columns {
+    @media (min-width: $vp-768) {
+      grid-template-columns: 2fr 1fr;
+    }
   }
 }
 
@@ -44,38 +52,46 @@
   }
 
   @media (min-width: $vp-768) {
-    min-width: 256px;
     padding: 52px 33px 31px 33px;
   }
 
   @media (min-width: $vp-1200) {
-    min-width: 400px;
     padding: 52px 50px 51px 50px;
   }
 }
 
 .advantages__point-image {
+  display: block;
   width: 100%;
-  max-height: 260px;
+  height: 100%;
 
   object-fit: cover;
 
   @media (min-width: $vp-768) {
-    max-height: 256px;
+    max-height: 100%;
   }
 }
 
 .advantages__point-subtitle {
   margin: 0 0 11px 0;
 
+  @media (min-width: $vp-768) {
+    br {
+      display: block;
+    }
+  }
+
   &--margin {
     margin: 0 0 16px 0;
+  }
+
+  br {
+    display: none;
   }
 }
 
 .advantages__point-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin: 0;
   padding: 24px 18px 28px 18px;
 
@@ -102,7 +118,6 @@
 
   @media (min-width: $vp-768) {
     display: grid;
-    flex-direction: row;
     padding: 0;
 
     text-align: center;
@@ -146,7 +161,7 @@
   }
 
   &--home::before {
-    background-image: url("../img/advantages-point-icon-home.svg");
+    background-image: url("../img/advantages/advantages-point-icon-home.svg");
 
     @media (min-width: $vp-768) {
       top: 60px;
@@ -158,12 +173,17 @@
     }
 
     @media (min-width: $vp-1200) {
-      top: 69px;
+      top: 57px;
+
+      width: 80px;
+      height: 80px;
+
+      background-size: 80px 82px;
     }
   }
 
   &--food::before {
-    background-image: url("../img/advantages-point-icon-food.svg");
+    background-image: url("../img/advantages/advantages-point-icon-food.svg");
 
     @media (min-width: $vp-768) {
       top: 62px;
@@ -175,12 +195,17 @@
     }
 
     @media (min-width: $vp-1200) {
-      top: 72px;
+      top: 62px;
+
+      width: 82px;
+      height: 76px;
+
+      background-size: 77px 76px;
     }
   }
 
   &--souvenirs::before {
-    background-image: url("../img/advantages-point-icon-souvenirs.svg");
+    background-image: url("../img/advantages/advantages-point-icon-souvenirs.svg");
 
     @media (min-width: $vp-768) {
       top: 64px;
@@ -192,8 +217,18 @@
     }
 
     @media (min-width: $vp-1200) {
-      top: 69px;
+      top: 60px;
+
+      width: 82px;
+      height: 76px;
+
+      background-size: 79px 79px;
+      transform: translate(-50%, 0) scaleX(1.2);
     }
+  }
+
+  &:last-child {
+    margin: 0;
   }
 
   @media (min-width: $vp-768) {
@@ -218,10 +253,6 @@
       padding: 52px 50px 52px 50px;
     }
   }
-
-  &:last-child {
-    margin: 0;
-  }
 }
 
 .advantages__point-number {
@@ -235,5 +266,23 @@
 
   &--white {
     color: $white;
+  }
+}
+
+.advantages__point-description {
+  br {
+    display: none;
+  }
+
+  @media (min-width: $vp-768) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-1200) {
+    br {
+      display: block;
+    }
   }
 }

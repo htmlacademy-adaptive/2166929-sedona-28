@@ -58,6 +58,12 @@
   background-color: rgba($night-rider, 0.3);
 }
 
+.custom-element__input[type="radio"]:focus + .custom-element__icon {
+  background-color: $white-smoke;
+  outline: 3px solid $seagull;
+  outline-offset: 3px;
+}
+
 .custom-element__input[type="checkbox"]:checked + .custom-element__icon::after {
   content: "";
   position: absolute;
@@ -67,11 +73,17 @@
   width: 22px;
   height: 16px;
 
-  background-image: url("../img/input-checked.svg");
+  background-image: url("../img/custom-element/input-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .custom-element:active .custom-element__input[type="checkbox"]:checked + .custom-element__icon::after {
   opacity: 30%;
+}
+
+.custom-element__input[type="checkbox"]:focus + .custom-element__icon {
+  background-color: $white-smoke;
+  outline: 3px solid $seagull;
+  outline-offset: 3px;
 }

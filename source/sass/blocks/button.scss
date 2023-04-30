@@ -22,4 +22,18 @@
 
     background-color: $seagull-active;
   }
+
+  &:focus {
+    color: $white;
+
+    background-color: $seagull;
+    outline: 3px solid $seagull;
+    outline-offset: 3px;
+  }
+
+  &:disabled {
+    background-color: $gainsboro;
+
+    pointer-events: none;
+  }
 }

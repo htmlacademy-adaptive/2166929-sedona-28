@@ -29,15 +29,15 @@
   }
 
   &--vkontakte::before {
-    background-image: url("../img/social-icon-vk.svg");
+    background-image: url("../img/social/social-icon-vk.svg");
   }
 
   &--telegram::before {
-    background-image: url("../img/social-icon-telegram.svg");
+    background-image: url("../img/social/social-icon-telegram.svg");
   }
 
   &--youtube::before {
-    background-image: url("../img/social-icon-youtube.svg");
+    background-image: url("../img/social/social-icon-youtube.svg");
   }
 
   &:hover {
@@ -52,5 +52,11 @@
   &--telegram:active::before,
   &--youtube:active::before {
     opacity: 30%;
+  }
+
+  &:focus {
+    background-color: $seagull;
+    outline: 2px solid $seagull;
+    outline-offset: 2px;
   }
 }

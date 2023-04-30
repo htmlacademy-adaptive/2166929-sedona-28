@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Седона — туристический городок в штате Аризона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,21 +23,21 @@
         <span class="header__toggle-line"></span>
       </button>
       <a class="header__logo" href="index.html">
-        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
+        <img src="img/header/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
       </a>
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="index.html">Главная</a>
           </li>
-          <li class="navigation__item">
-            <span class="navigation__link navigation__link--current">Фото и видео</span>
+          <li class="header__item">
+            <span class="header__link header__link--current">Фото и видео</span>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Форма отзыва</a>
+          <li class="header__item">
+            <a class="header__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html academy</a>
+          <li class="header__item">
+            <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html academy</a>
           </li>
         </ul>
       </nav>
@@ -42,8 +46,8 @@
     <main class="main-container">
       <section class="banner banner--inner">
         <h1 class="visually-hidden">Фото и видео городка Седона.</h1>
-        <div class="banner__image">
-          <img src="img/inner-welcome-text.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        <div class="banner__image-container">
+          <img class="banner__image" src="img/first-block/inner-welcome-text.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
         </div>
       </section>
       <section class="photos-cards">
@@ -54,7 +58,11 @@
       <div class="photos-cards__photos photos">
         <figure class="photos__item photos__item--popular">
           <a class="photos__link" href="#">
-            <img class="photos__image" src="img/photo-expanses.jpg" width="280" height="280" alt="Просторы Седоны.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-expanses-desktop.jpg 1x, img/photo/photo-expanses-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/photo-expanses-tablet.jpg 1x, img/photo/photo-expanses-tablet@2x.jpg 2x">
+              <img class="photos__image" src="img/photo/photo-expanses-mobile.jpg" width="280" height="280" srcset="img/photo/photo-expanses-mobile@2x.jpg 2x" alt="Просторы Седоны.">
+            </picture>
           </a>
           <figcaption class="photos__item-container">
             <div class="photos__item-text-container">
@@ -70,7 +78,12 @@
         </figure>
         <figure class="photos__item">
           <a class="photos__link" href="#">
-            <img class="photos__image" src="img/photo-vegetation.jpg" width="280" height="280" alt="Растительность Седоны.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-vegetation-desktop.jpg 1x, img/photo/photo-vegetation-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/photo-vegetation-tablet.jpg 1x, img/photo/photo-vegetation-tablet@2x.jpg 2x">
+              <img class="photos__image" src="img/photo/photo-vegetation-mobile.jpg" width="280" height="280" srcset="img/photo/photo-vegetation-mobile@2x.jpg 2x" alt="Растительность Седоны.">
+            </picture>
+
           </a>
           <figcaption class="photos__item-container">
             <div class="photos__item-text-container">
@@ -86,7 +99,11 @@
         </figure>
         <figure class="photos__item">
           <a class="photos__link" href="#">
-            <img class="photos__image" src="img/photo-road.jpg" width="280" height="280" alt="Дорога на север Седоны.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-road-desktop.jpg 1x, img/photo/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/photo-road-tablet.jpg 1x, img/photo/photo-road-tablet@2x.jpg 2x">
+              <img class="photos__image" src="img/photo/photo-road-mobile.jpg" width="280" height="280" srcset="img/photo/photo-road-mobile@2x.jpg 2x" alt="Дорога на север Седоны.">
+            </picture>
           </a>
           <figcaption class="photos__item-container photos__item-container--whisper">
             <div class="photos__item-text-container">
@@ -102,7 +119,11 @@
         </figure>
         <figure class="photos__item">
           <a class="photos__link" href="#">
-            <img class="photos__image" src="img/photo-bridge.jpg" width="280" height="280" alt="Мост дьявола в Седоне.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/photo-bridge-desktop.jpg 1x, img/photo/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/photo-bridge-tablet.jpg 1x, img/photo/photo-bridge-tablet@2x.jpg 2x">
+              <img class="photos__image" src="img/photo/photo-bridge-mobile.jpg" width="280" height="280" srcset="img/photo/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола в Седоне.">
+            </picture>
           </a>
           <figcaption class="photos__item-container">
             <div class="photos__item-text-container">
@@ -124,7 +145,11 @@
           <p class="info__description description info__description--margin">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video-presentation__player" href="#">
-          <img class="video-presentation__image" src="img/video.jpg" width="280" height="177" alt="Видеопрезентация.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video/video-desktop.jpg 1x, img/video/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video/video-tablet.jpg 1x, img/video/video-tablet@2x.jpg 2x">
+            <img class="video-presentation__image" src="img/video/video-mobile.jpg" width="280" height="177" srcset="img/video/video-mobile@2x.jpg 2x" alt="Видеопрезентация.">
+          </picture>
           <a class="video-presentation__link" href="#">
             <span class="visually-hidden">Начать просмотр.</span>
           </a>
@@ -154,8 +179,8 @@
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="visually-hidden">Переход на страницу разработчика.</span>
         <span class="footer__link-text">Разработано</span>
-        <svg class="footer__icon" width="27" height="36" viewBox="0 0 27 36" fill="black" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.65 0.949951H13.55L0.0500488 2.34995V27.05L13.55 35.0499L26.95 27.05V2.34995L13.65 0.949951ZM25.05 13.05L13.55 6.24995V6.14995H13.45L13.35 6.04995V6.14995L1.95005 13.05V4.04995L13.45 2.84995L25.05 4.04995V13.05ZM13.45 7.74995L24.95 14.45L20.45 17.05L13.35 12.85V14.25L19.25 17.75L18.35 18.25L13.35 15.25V16.65L17.15 18.95L16.35 19.45L13.35 17.65V19.05L15.25 20.15L13.45 21.25L2.05005 14.55L13.45 7.74995ZM1.95005 16.05L13.35 22.85V23.85L5.45005 19.15V20.55L13.45 25.35V26.45L5.45005 21.75V23.15L13.45 27.95L21.55 23.05V17.85L24.95 15.85V25.85L13.45 32.75L1.95005 25.95V16.05Z" />
+        <svg class="footer__icon" width="27" height="36" viewBox="0 0 27 36" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.65 0.949951H13.55L0.0500488 2.34995V27.05L13.55 35.0499L26.95 27.05V2.34995L13.65 0.949951ZM25.05 13.05L13.55 6.24995V6.14995H13.45L13.35 6.04995V6.14995L1.95005 13.05V4.04995L13.45 2.84995L25.05 4.04995V13.05ZM13.45 7.74995L24.95 14.45L20.45 17.05L13.35 12.85V14.25L19.25 17.75L18.35 18.25L13.35 15.25V16.65L17.15 18.95L16.35 19.45L13.35 17.65V19.05L15.25 20.15L13.45 21.25L2.05005 14.55L13.45 7.74995ZM1.95005 16.05L13.35 22.85V23.85L5.45005 19.15V20.55L13.45 25.35V26.45L5.45005 21.75V23.15L13.45 27.95L21.55 23.05V17.85L24.95 15.85V25.85L13.45 32.75L1.95005 25.95V16.05Z" fill="currentColor" />
         </svg>
       </a>
     </footer>

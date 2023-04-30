@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Седона — туристический городок в штате Аризона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,21 +23,21 @@
         <span class="header__toggle-line"></span>
       </button>
       <a class="header__logo" href="index.html">
-        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
+        <img src="img/header/logo-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
       </a>
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="index.html">Главная</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="photo.html">Фото и видео</a>
+          <li class="header__item">
+            <a class="header__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="navigation__item">
-            <span class="navigation__link navigation__link--current">Форма отзыва</span>
+          <li class="header__item">
+            <span class="header__link header__link--current">Форма отзыва</span>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html academy</a>
+          <li class="header__item">
+            <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html academy</a>
           </li>
         </ul>
       </nav>
@@ -42,8 +46,8 @@
     <main class="main-container">
       <section class="banner banner--inner">
         <h1 class="visually-hidden">Форма обратной связи о городке Седона.</h1>
-        <div class="banner__image">
-          <img src="img/inner-welcome-text.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+        <div class="banner__image-container">
+          <img class="banner__image" src="img/first-block/inner-welcome-text.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
         </div>
       </section>
       <section class="review-form">
@@ -176,20 +180,20 @@
       <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="visually-hidden">Переход на страницу разработчика.</span>
         <span class="footer__link-text">Разработано</span>
-        <svg class="footer__icon" width="27" height="36" viewBox="0 0 27 36" fill="black" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.65 0.949951H13.55L0.0500488 2.34995V27.05L13.55 35.0499L26.95 27.05V2.34995L13.65 0.949951ZM25.05 13.05L13.55 6.24995V6.14995H13.45L13.35 6.04995V6.14995L1.95005 13.05V4.04995L13.45 2.84995L25.05 4.04995V13.05ZM13.45 7.74995L24.95 14.45L20.45 17.05L13.35 12.85V14.25L19.25 17.75L18.35 18.25L13.35 15.25V16.65L17.15 18.95L16.35 19.45L13.35 17.65V19.05L15.25 20.15L13.45 21.25L2.05005 14.55L13.45 7.74995ZM1.95005 16.05L13.35 22.85V23.85L5.45005 19.15V20.55L13.45 25.35V26.45L5.45005 21.75V23.15L13.45 27.95L21.55 23.05V17.85L24.95 15.85V25.85L13.45 32.75L1.95005 25.95V16.05Z" />
+        <svg class="footer__icon" width="27" height="36" viewBox="0 0 27 36" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.65 0.949951H13.55L0.0500488 2.34995V27.05L13.55 35.0499L26.95 27.05V2.34995L13.65 0.949951ZM25.05 13.05L13.55 6.24995V6.14995H13.45L13.35 6.04995V6.14995L1.95005 13.05V4.04995L13.45 2.84995L25.05 4.04995V13.05ZM13.45 7.74995L24.95 14.45L20.45 17.05L13.35 12.85V14.25L19.25 17.75L18.35 18.25L13.35 15.25V16.65L17.15 18.95L16.35 19.45L13.35 17.65V19.05L15.25 20.15L13.45 21.25L2.05005 14.55L13.45 7.74995ZM1.95005 16.05L13.35 22.85V23.85L5.45005 19.15V20.55L13.45 25.35V26.45L5.45005 21.75V23.15L13.45 27.95L21.55 23.05V17.85L24.95 15.85V25.85L13.45 32.75L1.95005 25.95V16.05Z" fill="currentColor" />
         </svg>
       </a>
     </footer>
-    <!-- Для просмотра модального окна, надо блоку modal добавить класс is-open -->
+    <!-- Для просмотра модального окна, нужно блоку modal добавить класс is-open -->
     <div class="modal">
       <div class="modal__container modal__container--error">
         <h2 class="modal__title title">Что-то пошло не так!</h2>
           <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="modal__button button">OK</button>
+          <button class="modal__button button" type="button">OK</button>
       </div>
     </div>
-    <!-- Для просмотра модального окна, надо блоку modal добавить класс is-open -->
+    <!-- Для просмотра модального окна, нужно блоку modal добавить класс is-open -->
     <div class="modal">
       <div class="modal__container modal__container--success">
         <div class="modal__content">
@@ -197,7 +201,7 @@
           <p class="modal__description description modal__description--margin">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="modal__button-container">
-          <button class="modal__button button modal__button--width">Закрыть окно</button>
+          <button class="modal__button button modal__button--width" type="button">Закрыть окно</button>
         </div>
       </div>
     </div>

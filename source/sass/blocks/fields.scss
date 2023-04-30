@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 0;
 
-  gap: 56px;
+  gap: 36px;
 
   @media (min-width: $vp-768) {
     padding: 54px 64px 64px 64px;
@@ -25,8 +25,20 @@
 .fields__container-button {
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 
   gap: 3px;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 0 95px;
+  }
 
   & .fields__description {
     align-self: flex-end;
@@ -34,12 +46,6 @@
     @media (min-width: $vp-768) {
       align-self: flex-start;
     }
-  }
-
-  @media (min-width: $vp-768) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -152,6 +158,12 @@
     }
   }
 
+  &--emotions {
+    @media (min-width: $vp-1200) {
+      padding: 0 95px;
+    }
+  }
+
   &:last-of-type {
     margin: 0;
   }
@@ -207,6 +219,7 @@
 .fields__list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -224,6 +237,7 @@
   @media (min-width: $vp-1200) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 17px 53px;
 
     gap: 28px;
