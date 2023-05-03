@@ -86,6 +86,12 @@
 
   transform: translate(-50%, 0);
 
+  & img {
+    width: 185px;
+    height: 96px;
+    object-fit: cover;
+  }
+
   &--main {
     pointer-events: none;
   }
