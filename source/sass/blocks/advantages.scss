@@ -161,7 +161,7 @@
   }
 
   &--home::before {
-    background-image: url("../img/advantages/advantages-point-icon-home.svg");
+    background-image: url("../img/svg/advantages-point-icon-home.svg");
 
     @media (min-width: $vp-768) {
       top: 60px;
@@ -183,7 +183,7 @@
   }
 
   &--food::before {
-    background-image: url("../img/advantages/advantages-point-icon-food.svg");
+    background-image: url("../img/svg/advantages-point-icon-food.svg");
 
     @media (min-width: $vp-768) {
       top: 62px;
@@ -205,7 +205,7 @@
   }
 
   &--souvenirs::before {
-    background-image: url("../img/advantages/advantages-point-icon-souvenirs.svg");
+    background-image: url("../img/svg/advantages-point-icon-souvenirs.svg");
 
     @media (min-width: $vp-768) {
       top: 64px;

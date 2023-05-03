@@ -6,22 +6,22 @@
   min-height: 389px;
 
   background-color: $white-smoke;
-  background-image: url("../img/first-block/banner-background-image-mobile.jpg");
+  background-image: url("../img/background/banner-background-image-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/first-block/banner-background-image-mobile@2x.jpg");
+    background-image: url("../img/background/banner-background-image-mobile@2x.jpg");
     background-position: center 27%;
   }
 
   @media (min-width: $vp-768) {
     min-height: 518px;
 
-    background-image: url("../img/first-block/banner-background-image-tablet.jpg");
+    background-image: url("../img/background/banner-background-image-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/first-block/banner-background-image-tablet@2x.jpg");
+      background-image: url("../img/background/banner-background-image-tablet@2x.jpg");
     }
   }
 
@@ -46,7 +46,7 @@
     width: 100%;
     height: 57px;
 
-    background: url("../img/first-block/first-block-pattern.svg") center;
+    background: url("../img/svg/first-block-pattern.svg") center;
   }
 }
 

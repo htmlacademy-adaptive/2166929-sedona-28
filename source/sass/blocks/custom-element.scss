@@ -18,6 +18,7 @@
   top: -10px;
 
   display: inline-flex;
+  flex-shrink: 0;
   width: 46px;
   height: 46px;
 
@@ -73,7 +74,7 @@
   width: 22px;
   height: 16px;
 
-  background-image: url("../img/custom-element/input-checked.svg");
+  background-image: url("../img/svg/input-checked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
