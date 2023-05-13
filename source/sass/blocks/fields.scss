@@ -3,16 +3,16 @@
   flex-direction: column;
   padding: 0;
 
-  gap: 36px;
+  gap: 17px;
 
   @media (min-width: $vp-768) {
-    padding: 54px 64px 64px 64px;
+    padding: 54px 64px 66px 64px;
 
     gap: 48px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 34px 120px 63px 120px;
+    padding: 34px 120px 67px 120px;
   }
 }
 
@@ -25,7 +25,7 @@
 .fields__container-button {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 20px 18px 20px;
 
   gap: 3px;
 
@@ -56,7 +56,7 @@
   flex-direction: column;
   width: 100%;
   margin: 0;
-  padding: 24px 20px;
+  padding: 24px 20px 39px 20px;
 
   border: none;
 
@@ -81,21 +81,23 @@
       position: relative;
 
       width: calc(50% - 29px);
+      margin: 0 0 64px -3px;
     }
 
     @media (min-width: $vp-1200) {
       width: calc(50% - 50px);
+      margin: 0 0 73px 0;
     }
 
     &::before {
       @media (min-width: $vp-768) {
         content: "";
         position: absolute;
-        top: -82px;
-        right: -29px;
+        top: -61px;
+        right: -32px;
 
         width: 1px;
-        height: calc(100% + 90px);
+        height: calc(100% + 68px);
 
         background-color: $gainsboro;
       }
@@ -109,25 +111,30 @@
   &--contacts {
     position: relative;
 
+    padding: 24px 20px 36px 20px;
+
     border: none;
 
     @media (min-width: $vp-768) {
       width: calc(50% - 29px);
+      margin: 0 0 64px 0;
+      padding: 0;
     }
 
     @media (min-width: $vp-1200) {
       width: calc(50% - 50px);
+      margin: 0 0 73px 0;
     }
 
     &::before {
       @media (min-width: $vp-768) {
         content: "";
         position: absolute;
-        top: -82px;
+        top: -61px;
         left: -30px;
 
         width: 1px;
-        height: calc(100% + 90px);
+        height: calc(100% + 68px);
 
         background-color: $gainsboro;
       }
@@ -139,22 +146,26 @@
   }
 
   &--impression {
+    padding: 24px 20px 25px 20px;
+
     @media (min-width: $vp-768) {
-      margin: 0 0 48px 0;
+      margin: 0 0 24px 0;
     }
 
     @media (min-width: $vp-1200) {
-      margin: 0 0 56px 0;
+      margin: 0 0 30px 0;
     }
   }
 
   &--attractions {
+    padding: 24px 20px 25px 20px;
+
     @media (min-width: $vp-768) {
-      margin: 0 0 42px 0;
+      margin: 0 0 19px 0;
     }
 
     @media (min-width: $vp-1200) {
-      margin: 0 0 56px 0;
+      margin: 0 0 29px 0;
     }
   }
 
@@ -183,7 +194,7 @@
 
   @media (min-width: $vp-768) {
     max-width: 400px;
-    margin: 0 0 28px 0;
+    margin: 0 auto 28px auto;
 
     font-size: 21px;
     line-height: 26px;
@@ -207,12 +218,24 @@
     }
   }
 
-  &--user-information & {
+  .fields__fieldset--user-information & {
     min-width: auto;
   }
 
-  &--contacts & {
+  .fields__fieldset--contacts & {
     min-width: auto;
+  }
+
+  .fields__fieldset--impression & {
+    @media (min-width: $vp-768) {
+      margin: 0 auto 4px auto;
+    }
+  }
+
+  .fields__fieldset--attractions & {
+    @media (min-width: $vp-768) {
+      margin: 0 auto 2px auto;
+    }
   }
 }
 
@@ -229,7 +252,7 @@
 
   @media (min-width: $vp-768) {
     display: grid;
-    padding: 0 36px;
+    padding: 0 13px;
 
     grid-template-columns: repeat(2, 1fr);
   }
@@ -238,18 +261,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 17px 53px;
+    padding: 18px 34px;
 
     gap: 28px;
   }
 
-  &--padding {
+  &--checkbox {
     @media (min-width: $vp-768) {
-      padding: 0 84px;
+      padding: 0 59px;
+
+      gap: 16px 33px;
     }
 
     @media (min-width: $vp-1200) {
-      padding: 31px 53px;
+      padding: 34px 24px;
     }
   }
 }
@@ -269,7 +294,13 @@
   opacity: 60%;
 
   @media (min-width: $vp-768) {
-    margin: 23px 0 0 0;
+    margin: 23px -4px 0 0;
+
+    font-size: 14px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin: 22px 1px 0 0;
   }
 }
 
@@ -278,10 +309,12 @@
 
   @media (min-width: $vp-768) {
     width: auto;
+    margin: 0 0 0 -4px;
     padding: 16px 71px;
   }
 
   @media (min-width: $vp-1200) {
+    margin: 0;
     padding: 16px 101px;
   }
 }

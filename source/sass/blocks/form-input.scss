@@ -26,22 +26,13 @@
   border: none;
 
   &::placeholder {
-    opacity: 30%;
-  }
-
-  &--textarea {
-    min-height: 150px;
-
-    resize: none;
-
-    @media (min-width: $vp-768) {
-      min-height: 160px;
-    }
+    opacity: 100%;
+    color: rgba($black, 0.3);
   }
 
   &--telephone,
   &--email {
-    padding: 16px 75px 16px 16px;
+    padding: 16px 61px 16px 16px;
 
     background-repeat: no-repeat;
     background-position: right;
@@ -53,6 +44,31 @@
 
   &--email {
     background-image: url("../img/svg/input-email-icon.svg");
+  }
+
+  @media (min-width: $vp-768) {
+    width: calc(100% + 2px);
+  }
+
+  @media (min-width: $vp-1200) {
+    width: 100%;
+  }
+
+  &--textarea {
+    min-height: 150px;
+
+    resize: none;
+
+    @media (min-width: $vp-768) {
+      width: calc(100% + 8px);
+      min-height: 160px;
+      margin: 0 0 0 -3px;
+    }
+
+    @media (min-width: $vp-1200) {
+      width: 100%;
+      margin: 0;
+    }
   }
 
   .form-input:hover & {

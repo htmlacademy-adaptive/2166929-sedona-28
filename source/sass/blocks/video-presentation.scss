@@ -1,29 +1,29 @@
 .video-presentation__info {
-  padding: 17px 18px 38px 18px;
+  padding: 18px 18px 38px 18px;
 
   @media (min-width: $vp-768) {
     max-width: 580px;
     margin: 0 auto;
-    padding: 58px 60px 44px 60px;
+    padding: 56px 48px 44px 48px;
   }
 
   @media (min-width: $vp-1200) {
     max-width: 690px;
-    padding: 62px 120px 40px 120px;
+    padding: 65px 120px 40px 120px;
   }
 }
 
 .video-presentation__player {
   position: relative;
 
-  padding: 0 18px;
+  padding: 0 20px;
 
   @media (min-width: $vp-768) {
-    padding: 44px 60px 40px 60px;
+    padding: 46px 60px 43px 60px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 40px 200px 84px 200px;
+    padding: 42px 200px 88px 200px;
   }
 }
 
@@ -41,7 +41,7 @@
 
 .video-presentation__link {
   position: absolute;
-  top: 50%;
+  top: calc(50% + 3px);
   left: 50%;
 
   width: 48px;
@@ -51,6 +51,10 @@
   transform: translate(-50%, -50%);
 
   clip-path: polygon(100% 50%, 0 0, 0 100%);
+
+  @media (min-width: $vp-1200) {
+    top: calc(50% - 21px);
+  }
 
   &:hover {
     background-color: rgba($white, 1);
