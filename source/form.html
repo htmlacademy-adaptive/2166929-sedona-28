@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <title>Седона — туристический городок в штате Аризона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -52,7 +52,7 @@
       </section>
       <section class="review-form">
         <div class="review-form__info info">
-          <h2 class="info__title title">Оставьте свой отзыв</h2>
+          <h2 class="info__subtitle subtitle subtitle--size info__subtitle--form">Оставьте свой отзыв</h2>
           <p class="info__description description info__description--margin">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review-form__form fields" action="https://echo.htmlacademy.ru/" method="post">
@@ -61,19 +61,19 @@
               <legend class="fields__title">Представьтесь:</legend>
               <label class="fields__label form-input">
                 <span class="form-input__description">Иья*:</span>
-                <input class="form-input__input" type="text" name="name" placeholder="Введите имя" value="Пётр" required>
+                <input class="form-input__input" type="text" name="name" placeholder="Имя" value="Пётр" required>
               </label>
               <label class="fields__label form-input">
                 <span class="form-input__description">Фамилия*:</span>
-                <input class="form-input__input" type="text" name="surname" placeholder="Введите фамилию" value="Пустота" required>
+                <input class="form-input__input" type="text" name="surname" placeholder="Фамилия" value="Пустота" required>
               </label>
               <label class="fields__label form-input">
                 <span class="form-input__description">Отчество:</span>
-                <input class="form-input__input" name="patronymic" type="text" placeholder="Введите отчество" value="Викторович">
+                <input class="form-input__input" name="patronymic" type="text" placeholder="Отчество" value="Викторович">
               </label>
             </fieldset>
             <fieldset class="fields__fieldset fields__fieldset--contacts">
-              <legend class="fields__title">Контактная информация:</legend>
+              <legend class="fields__title fields__title">Контактная информация:</legend>
               <label class="fields__label form-input form-input--icon">
                 <span class="form-input__description">Контактный телефон*:</span>
                 <input class="form-input__input form-input__input--telephone" type="tel" name="telephone" placeholder="Введите телефон" required>
@@ -111,7 +111,7 @@
             </fieldset>
             <fieldset class="fields__fieldset fields__fieldset--attractions">
               <legend class="fields__title">Посещенные<br>достопримечательности:</legend>
-              <ul class="fields__list  fields__list--padding">
+              <ul class="fields__list  fields__list--checkbox">
                 <li class="fields__item">
                   <label class="fields__element custom-element">
                     <input class="custom-element__input visually-hidden" type="checkbox" name="attractions" value="devil-bridge" checked>
@@ -188,20 +188,20 @@
     <!-- Для просмотра модального окна, нужно блоку modal добавить класс is-open -->
     <div class="modal">
       <div class="modal__container modal__container--error">
-        <h2 class="modal__title title">Что-то пошло не так!</h2>
-          <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="modal__button button" type="button">OK</button>
+        <h2 class="modal__subtitle subtitle">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button button" type="button">OK</button>
       </div>
     </div>
     <!-- Для просмотра модального окна, нужно блоку modal добавить класс is-open -->
     <div class="modal">
       <div class="modal__container modal__container--success">
         <div class="modal__content">
-          <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
-          <p class="modal__description description modal__description--margin">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <h2 class="modal__subtitle subtitle">Ваш отзыв отправлен!</h2>
+          <p class="modal__description description modal__description--margin">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы опубликуем его на&nbsp;сайте.</p>
         </div>
         <div class="modal__button-container">
-          <button class="modal__button button modal__button--width" type="button">Закрыть окно</button>
+          <button class="modal__button button button--size modal__button--width" type="button">Закрыть окно</button>
         </div>
       </div>
     </div>

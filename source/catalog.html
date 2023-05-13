@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <title>Седона — туристический городок в штате Аризона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -52,13 +52,16 @@
       </section>
       <section class="photos-cards">
         <div class="photos-cards__info info">
-          <h2 class="info__title title">Фото и видео</h2>
+          <h2 class="info__subtitle subtitle subtitle--size info__subtitle--photos">Фото и видео</h2>
           <p class="info__description description info__description--margin">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       <div class="photos-cards__photos photos">
         <figure class="photos__item photos__item--popular">
           <a class="photos__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width:1200px)" srcset="img/content/photo-expanses-desktop.webp 1x, img/content/photo-expanses-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/content/photo-expanses-tablet.webp 1x, img/content/photo-expanses-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-expanses-mobile.webp 1x, img/content/photo-expanses-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/content/photo-expanses-desktop.jpg 1x, img/content/photo-expanses-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/content/photo-expanses-tablet.jpg 1x, img/content/photo-expanses-tablet@2x.jpg 2x">
               <img class="photos__image" src="img/content/photo-expanses-mobile.jpg" width="280" height="280" srcset="img/content/photo-expanses-mobile@2x.jpg 2x" alt="Просторы Седоны.">
@@ -81,13 +84,16 @@
         <figure class="photos__item">
           <a class="photos__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width:1200px)" srcset="img/content/photo-vegetation-desktop.webp 1x, img/content/photo-vegetation-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/content/photo-vegetation-tablet.webp 1x, img/content/photo-vegetation-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-vegetation-mobile.webp 1x, img/content/photo-vegetation-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/content/photo-vegetation-desktop.jpg 1x, img/content/photo-vegetation-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/content/photo-vegetation-tablet.jpg 1x, img/content/photo-vegetation-tablet@2x.jpg 2x">
               <img class="photos__image" src="img/content/photo-vegetation-mobile.jpg" width="280" height="280" srcset="img/content/photo-vegetation-mobile@2x.jpg 2x" alt="Растительность Седоны.">
             </picture>
 
           </a>
-          <figcaption class="photos__item-container">
+          <figcaption class="photos__item-container photos__item-container--padding">
             <div class="photos__item-text-container">
               <h3 class="photos__title photos__title--color">Местная растительность</h3>
               <p class="photos__description photos__description--white">Автор фото: Сергей</p>
@@ -104,12 +110,15 @@
         <figure class="photos__item">
           <a class="photos__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width:1200px)" srcset="img/content/photo-road-desktop.webp 1x, img/content/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/content/photo-road-tablet.webp 1x, img/content/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-road-mobile.webp 1x, img/content/photo-vegetation-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/content/photo-road-desktop.jpg 1x, img/content/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/content/photo-road-tablet.jpg 1x, img/content/photo-road-tablet@2x.jpg 2x">
               <img class="photos__image" src="img/content/photo-road-mobile.jpg" width="280" height="280" srcset="img/content/photo-road-mobile@2x.jpg 2x" alt="Дорога на север Седоны.">
             </picture>
           </a>
-          <figcaption class="photos__item-container photos__item-container--whisper">
+          <figcaption class="photos__item-container photos__item-container--whisper photos__item-container--padding">
             <div class="photos__item-text-container">
               <h3 class="photos__title photos__title--color">Дорога на север</h3>
               <p class="photos__description photos__description--white">Автор фото: Петр</p>
@@ -126,12 +135,15 @@
         <figure class="photos__item">
           <a class="photos__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width:1200px)" srcset="img/content/photo-bridge-desktop.webp 1x, img/content/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/content/photo-bridge-tablet.webp 1x, img/content/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-bridge-mobile.webp 1x, img/content/photo-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/content/photo-bridge-desktop.jpg 1x, img/content/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/content/photo-bridge-tablet.jpg 1x, img/content/photo-bridge-tablet@2x.jpg 2x">
               <img class="photos__image" src="img/content/photo-bridge-mobile.jpg" width="280" height="280" srcset="img/content/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола в Седоне.">
             </picture>
           </a>
-          <figcaption class="photos__item-container">
+          <figcaption class="photos__item-container photos__item-container--padding">
             <div class="photos__item-text-container">
               <h3 class="photos__title photos__title--color">Мост дьявола</h3>
               <p class="photos__description photos__description--white">Автор фото: Антон</p>
@@ -146,14 +158,18 @@
           </figcaption>
         </figure>
       </div>
+      </section>
 
       <section class="video-presentation">
         <div class="video-presentation__info info">
-          <h2 class="info__title title">Все еще сомневаетесь?</h2>
-          <p class="info__description description info__description--margin">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <h2 class="info__subtitle subtitle subtitle--size info__subtitle--video">Все еще сомневаетесь?</h2>
+          <p class="info__description description info__description--margin info__description--video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <div class="video-presentation__player" href="#">
+        <div class="video-presentation__player">
           <picture>
+            <source type="image/webp" media="(min-width:1200px)" srcset="img/content/video-desktop.webp 1x, img/content/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/content/video-tablet.webp 1x, img/content/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/video-mobile.webp 1x, img/content/video-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/content/video-desktop.jpg 1x, img/content/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/video-tablet.jpg 1x, img/content/video-tablet@2x.jpg 2x">
             <img class="video-presentation__image" src="img/content/video-mobile.jpg" width="280" height="177" srcset="img/content/video-mobile@2x.jpg 2x" alt="Видеопрезентация.">
@@ -165,7 +181,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--padding">
       <span class="footer__tag">#visitsedona</span>
       <ul class="footer__social social">
         <li class="social__item">

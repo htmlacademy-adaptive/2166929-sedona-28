@@ -2,20 +2,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 33px;
+  padding: 38px 33px 31px 33px;
 
   gap: 30px;
 
   @media (min-width: $vp-768) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 36px 60px;
+    padding: 33px 60px 36px 60px;
   }
 
   @media (min-width: $vp-1200) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 36px 120px;
+    padding: 32px 120px 36px 120px;
+  }
+
+  &--padding {
+    padding: 35px 33px 31px 33px;
+
+    @media (min-width: $vp-768) {
+      padding: 33px 60px 36px 60px;
+    }
+
+    @media (min-width: $vp-1200) {
+      padding: 32px 120px 36px 120px;
+    }
   }
 }
 

@@ -39,10 +39,11 @@
 }
 
 .like__number {
-  margin: 4px 0 0 0;
+  margin: 5px 0 0 7px;
 
   @media (min-width: $vp-768) {
     max-width: 70px;
+    margin: 5px 0 0 0;
   }
 
   @media (min-width: $vp-1200) {
