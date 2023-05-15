@@ -28,6 +28,8 @@
   &--inner {
     min-height: 158px;
 
+    background-position: 0 100%;
+
     @media (min-width: $vp-768) {
       min-height: 288px;
     }

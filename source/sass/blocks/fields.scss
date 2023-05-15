@@ -45,6 +45,7 @@
 
     @media (min-width: $vp-768) {
       align-self: flex-start;
+      max-width: 200px;
     }
   }
 }
@@ -260,10 +261,9 @@
   @media (min-width: $vp-1200) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 18px 34px;
 
-    gap: 28px;
+    gap: 16px 63px;
   }
 
   &--checkbox {
@@ -275,6 +275,8 @@
 
     @media (min-width: $vp-1200) {
       padding: 34px 24px;
+
+      gap: 16px 64px;
     }
   }
 }
@@ -309,6 +311,7 @@
 
   @media (min-width: $vp-768) {
     width: auto;
+    max-width: 500px;
     margin: 0 0 0 -4px;
     padding: 16px 71px;
   }

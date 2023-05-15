@@ -26,8 +26,9 @@
   border: none;
 
   &::placeholder {
-    opacity: 100%;
     color: rgba($black, 0.3);
+
+    opacity: 100%;
   }
 
   &--telephone,
