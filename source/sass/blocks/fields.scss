@@ -40,11 +40,12 @@
     padding: 0 95px;
   }
 
-  & .fields__description {
+  .fields__description {
     align-self: flex-end;
 
     @media (min-width: $vp-768) {
       align-self: flex-start;
+      max-width: 200px;
     }
   }
 }
@@ -146,26 +147,26 @@
   }
 
   &--impression {
-    padding: 24px 20px 25px 20px;
+    padding: 24px 20px 15px 20px;
 
     @media (min-width: $vp-768) {
-      margin: 0 0 24px 0;
+      margin: 0 0 23px 0;
     }
 
     @media (min-width: $vp-1200) {
-      margin: 0 0 30px 0;
+      margin: 0 0 27px 0;
     }
   }
 
   &--attractions {
-    padding: 24px 20px 25px 20px;
+    padding: 24px 20px 15px 20px;
 
     @media (min-width: $vp-768) {
-      margin: 0 0 19px 0;
+      margin: 0 0 17px 0;
     }
 
     @media (min-width: $vp-1200) {
-      margin: 0 0 29px 0;
+      margin: 0 0 25px 0;
     }
   }
 
@@ -234,7 +235,7 @@
 
   .fields__fieldset--attractions & {
     @media (min-width: $vp-768) {
-      margin: 0 auto 2px auto;
+      margin: 0 auto 6px auto;
     }
   }
 }
@@ -248,7 +249,7 @@
 
   list-style: none;
 
-  gap: 16px;
+  gap: 6px 17px;
 
   @media (min-width: $vp-768) {
     display: grid;
@@ -258,23 +259,26 @@
   }
 
   @media (min-width: $vp-1200) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 18px 34px;
 
-    gap: 28px;
+    gap: 16px 52px;
+    grid-template-columns: repeat(3, 30%);
   }
 
   &--checkbox {
     @media (min-width: $vp-768) {
+      display: grid;
       padding: 0 59px;
 
-      gap: 16px 33px;
+      gap: 5px 40px;
+      grid-template-columns: repeat(2, 45%);
     }
 
     @media (min-width: $vp-1200) {
       padding: 34px 24px;
+
+      gap: 16px 27px;
+      grid-template-columns: 24% 23.7% 21.8% 21.2%;
     }
   }
 }
@@ -309,6 +313,7 @@
 
   @media (min-width: $vp-768) {
     width: auto;
+    max-width: 500px;
     margin: 0 0 0 -4px;
     padding: 16px 71px;
   }

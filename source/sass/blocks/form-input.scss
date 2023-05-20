@@ -26,8 +26,9 @@
   border: none;
 
   &::placeholder {
-    opacity: 100%;
     color: rgba($black, 0.3);
+
+    opacity: 100%;
   }
 
   &--telephone,
@@ -75,19 +76,26 @@
     background-color: $whisper-dark;
   }
 
-  .form-input:active & {
+  &:focus {
     background-color: $white;
     outline: 4px solid $whisper-dark;
     outline-offset: -4px;
   }
 
-  &:focus {
-    background-color: $white-smoke;
-    outline: 3px solid $seagull;
+  &:focus:hover {
+    background-color: $white;
   }
 
-  .form-input:hover &:focus {
-    background-color: $white-smoke;
+  &:active {
+    background-color: $white;
+    outline: 4px solid $whisper-dark;
+    outline-offset: -4px;
+  }
+
+  .form-input:active & {
+    background-color: $white;
+    outline: 4px solid $whisper-dark;
+    outline-offset: -4px;
   }
 
   &:disabled {
