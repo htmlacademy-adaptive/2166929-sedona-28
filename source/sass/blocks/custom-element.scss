@@ -1,9 +1,11 @@
 .custom-element {
   position: relative;
+
+  display: flex;
 }
 
 .custom-element__input-label {
-  padding: 10px 0 10px 62px;
+  padding: 0 0 10px 62px;
 
   font-weight: 700;
   font-size: 18px;
@@ -11,13 +13,20 @@
   color: $black;
 
   cursor: pointer;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin: -2px 0 0 0;
+  }
 }
 
 .custom-element__icon {
   position: absolute;
-  top: -10px;
+  top: -12px;
 
-  display: inline-flex;
   flex-shrink: 0;
   width: 46px;
   height: 46px;

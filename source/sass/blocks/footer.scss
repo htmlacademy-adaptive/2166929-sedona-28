@@ -9,6 +9,7 @@
   @media (min-width: $vp-768) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 33px 60px 36px 60px;
   }
 
@@ -40,6 +41,7 @@
 
   @media (min-width: $vp-768) {
     max-width: 250px;
+    margin: 11px 0 0 0;
 
     text-align: left;
   }
@@ -56,6 +58,10 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $vp-1200) {
+    max-width: 270px;
+  }
 }
 
 .footer__link {
@@ -68,12 +74,14 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  &:hover {
-    color: $seagull;
+  @media (min-width: $vp-768) {
+    margin: 6px 0 0 0;
   }
 
-  &:active {
-    color: $pink-swan;
+  &:hover {
+    color: $seagull;
+
+    transition: 0.2s ease-in;
   }
 
   &:focus {
@@ -81,6 +89,12 @@
 
     outline: 2px solid $seagull;
     outline-offset: 2px;
+  }
+
+  &:active {
+    color: $pink-swan;
+
+    outline: none;
   }
 }
 

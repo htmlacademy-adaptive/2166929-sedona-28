@@ -1,18 +1,18 @@
 .hotel-search__info {
-  padding: 36px 18px 49px 18px;
+  padding: 38px 18px 49px 18px;
 
   br {
     display: none;
+
+    @media (min-width: $vp-768) {
+      display: block;
+    }
   }
 
   @media (min-width: $vp-768) {
     max-width: 800px;
     margin: 0 auto;
     padding: 59px 60px 55px 60px;
-
-    br {
-      display: block;
-    }
   }
 
   @media (min-width: $vp-1200) {

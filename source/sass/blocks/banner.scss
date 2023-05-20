@@ -3,7 +3,7 @@
 
   display: flex;
   flex-direction: column;
-  min-height: 388px;
+  padding: 90px 20px 81px 20px;
 
   background-color: $white-smoke;
   background-image: url("../img/background/banner-background-image-mobile.jpg");
@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $vp-768) {
-    min-height: 516px;
+    padding: 77px 60px 90px 60px;
 
     background-image: url("../img/background/banner-background-image-tablet.jpg");
 
@@ -25,17 +25,27 @@
     }
   }
 
+  @media (min-width: $vp-1200) {
+    padding: 78px 60px 89px 60px;
+
+    background-image: url("../img/background/banner-background-image-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/banner-background-image-desktop@2x.jpg");
+    }
+  }
+
   &--inner {
-    min-height: 158px;
+    padding: 52px 20px 62px 20px;
 
     background-position: 0 100%;
 
     @media (min-width: $vp-768) {
-      min-height: 288px;
+      padding: 93px 60px 115px 60px;
     }
 
     @media (min-width: $vp-1200) {
-      min-height: 297px;
+      padding: 99px 100px 121px 100px;
     }
   }
 
@@ -53,32 +63,24 @@
 }
 
 .banner__image-container {
-  margin: 88px auto 82px auto;
+  margin: auto;
 
   @media (min-width: $vp-768) {
     width: 461px;
     height: 349px;
-    margin: 75px auto 82px auto;
-
-    .banner--inner & {
-      width: 460px;
-      height: 80px;
-    }
+    margin: auto;
   }
 
   @media (min-width: $vp-1200) {
-    margin: 77px auto 82px auto;
+    margin: auto;
   }
 
   .banner--inner & {
-    margin: 52px auto 62px auto;
+    margin: auto;
 
     @media (min-width: $vp-768) {
-      margin: 91px auto 62px auto;
-    }
-
-    @media (min-width: $vp-1200) {
-      margin: 98px auto 62px auto;
+      width: 460px;
+      height: 80px;
     }
   }
 }

@@ -42,21 +42,24 @@
 
   &:hover {
     background-color: $seagull-hover;
-  }
 
-  &:active {
-    background-color: $seagull-active;
-  }
-
-  &--vkontakte:active::before,
-  &--telegram:active::before,
-  &--youtube:active::before {
-    opacity: 30%;
+    transition: 0.2s ease-in;
   }
 
   &:focus {
     background-color: $seagull;
     outline: 2px solid $seagull;
     outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: $seagull-active;
+    outline: none;
+  }
+
+  &--vkontakte:active::before,
+  &--telegram:active::before,
+  &--youtube:active::before {
+    opacity: 30%;
   }
 }

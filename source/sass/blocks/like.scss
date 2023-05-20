@@ -15,16 +15,19 @@
 
   &:hover {
     opacity: 70%;
-  }
 
-  &:active {
-    opacity: 40%;
+    transition: 0.2s ease-in;
   }
 
   &:focus {
     outline: 3px solid $seagull;
     outline-offset: 3px;
     opacity: 100%;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 40%;
   }
 }
 

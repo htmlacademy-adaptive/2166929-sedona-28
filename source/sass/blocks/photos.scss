@@ -73,7 +73,7 @@
     background-color: rgba($black, 0.3);
   }
 
-  &--whisper {
+  .photos__item:not(.photos__item--popular):nth-child(odd) & {
     @media (min-width: $vp-768) {
       background-color: $whisper;
     }
@@ -152,10 +152,6 @@
 
   @media (min-width: $vp-768) {
     height: 268px;
-
-    .photos__item--popular & {
-      min-height: 400px;
-    }
   }
 
   @media (min-width: $vp-1200) {
@@ -167,18 +163,27 @@
     height: 100%;
   }
 
-  &:hover {
-    opacity: 80%;
+  .photos__item--popular & {
+    @media (min-width: $vp-768) {
+      min-height: 400px;
+    }
   }
 
-  &:active {
-    opacity: 50%;
+  &:hover {
+    opacity: 80%;
+
+    transition: 0.3s ease-in;
   }
 
   &:focus {
-    outline: 3px solid $seagull;
+    outline: 3px solid $white;
     outline-offset: -6px;
     opacity: 100%;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 50%;
   }
 }
 
