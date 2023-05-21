@@ -57,7 +57,7 @@
   flex-direction: column;
   width: 100%;
   margin: 0;
-  padding: 24px 20px 39px 20px;
+  padding: 24px 20px 42px 20px;
 
   border: none;
 
@@ -87,7 +87,7 @@
 
     @media (min-width: $vp-1200) {
       width: calc(50% - 50px);
-      margin: 0 0 73px 0;
+      margin: 0 0 72px 0;
     }
 
     &::before {
@@ -112,7 +112,7 @@
   &--contacts {
     position: relative;
 
-    padding: 24px 20px 36px 20px;
+    padding: 24px 20px 34px 20px;
 
     border: none;
 
@@ -124,7 +124,7 @@
 
     @media (min-width: $vp-1200) {
       width: calc(50% - 50px);
-      margin: 0 0 73px 0;
+      margin: 0 0 72px 0;
     }
 
     &::before {
@@ -154,7 +154,7 @@
     }
 
     @media (min-width: $vp-1200) {
-      margin: 0 0 27px 0;
+      margin: 0 0 29px 0;
     }
   }
 
@@ -166,11 +166,17 @@
     }
 
     @media (min-width: $vp-1200) {
-      margin: 0 0 25px 0;
+      margin: 0 0 27px 0;
     }
   }
 
   &--emotions {
+    padding: 24px 20px 39px 20px;
+
+    @media (min-width: $vp-768) {
+      padding: 0;
+    }
+
     @media (min-width: $vp-1200) {
       padding: 0 95px;
     }
@@ -206,7 +212,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -24px;
+    top: -25px;
     left: -22px;
 
     width: calc(100% + 44px);
