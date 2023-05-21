@@ -9,7 +9,7 @@
 
   @media (min-width: $vp-1200) {
     max-width: 680px;
-    padding: 100px 120px 90px 120px;
+    padding: 97px 120px 90px 120px;
   }
 }
 
@@ -33,19 +33,5 @@
     padding: 0;
 
     grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-.photos__item {
-  &--popular {
-    @media (min-width: $vp-768) {
-      grid-column-end: 3;
-      grid-column-start: 1;
-    }
-
-    @media (min-width: $vp-1200) {
-      grid-column-end: 4;
-      grid-column-start: 1;
-    }
   }
 }
